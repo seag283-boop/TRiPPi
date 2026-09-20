@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TRAVEL</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/travel.css" />
+
+    <script src="js/trvel.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- HEADER -->
+
+      <header id="header">
+        <div class="header-inner">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="./img/LOGO.png" alt="TRiPPi" />
+            </a>
+          </h1>
+
+          <nav class="gnb">
+            <ul>
+              <li>
+                <a href="index.html"> 홈 </a>
+              </li>
+
+              <li class="active">
+                <a href="#"> 여행지 찾기 </a>
+              </li>
+
+              <li>
+                <a href="#"> 취향테스트 </a>
+              </li>
+
+              <li>
+                <a href="#"> 여행기록 </a>
+              </li>
+
+              <li>
+                <a href="#"> 마이페이지 </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-util">
+            <button type="button" class="search">
+              <img src="./img/icon/search.png" alt="검색" />
+            </button>
+
+            <button type="button" class="search">
+              <img src="./img/icon/favorite.png" alt="찜" />
+            </button>
+
+            <button type="button" class="search">
+              <img src="./img/icon/mypage.png" alt="마이페이지" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+
+      <main class="travel-page">
+        <!-- HERO -->
+
+        <section class="travel-hero">
+          <div class="travel-hero-inner">
+            <!-- 히어로 배경 이미지 -->
+
+            <img
+              src="./img/travle/travle 상단.png"
+              alt="좋은 곳이 너를 기다리고 있어"
+              class="travel-hero-bg"
+            />
+
+            <!-- 토끼 캐릭터 -->
+
+            <img
+              src="./img/travle/여행지 찾기 토끼.png"
+              alt="여행 토끼"
+              class="travel-hero-rabbit"
+            />
+          </div>
+        </section>
+
+        <!-- BREADCRUMB -->
+
+        <div class="travel-breadcrumb">
+          <a href="./index.html">
+            <img src="./img/travle/home-button 1.png" alt="" />
+
+            <span> 홈 </span>
+          </a>
+
+          <span class="breadcrumb-arrow">
+            <img src="./img/travle/CaretRight.png" alt="" />
+          </span>
+
+          <span> 여행지 </span>
+        </div>
+
+        <!-- TRAVEL CONTENT -->
+
+        <div class="travel-content">
+          <!-- SIDEBAR -->
+
+          <aside class="travel-sidebar">
+            <!-- 여행지 -->
+
+            <div class="sidebar-title">
+              <img src="./img/travle/여행지 아이콘 side.png" alt="" />
+
+              <h2>여행지</h2>
+            </div>
+
+            <!-- 전체 / 국내 / 해외 -->
+
+            <ul class="destinatin-menu">
+              <!-- 전체 -->
+
+              <li class="active">
+                <a href="#">
+                  <img src="./img/travle/전체.png" alt="" />
+
+                  <span> 전체 </span>
+                </a>
+              </li>
+
+              <!-- 국내 -->
+
+              <li>
+                <a href="#">
+                  <img src="./img/travle/국내.png" alt="" />
+
+                  <span> 국내 </span>
+                </a>
+              </li>
+
+              <!-- 해외 -->
+
+              <li>
+                <a href="#">
+                  <img src="./img/travle/해외.png" alt="" />
+
+                  <span> 해외 </span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- 구분선 -->
+
+            <div class="sidebar-divider"></div>
+
+            <!-- 여행 테마 -->
+
+            <div class="theme-title">
+              <img src="./img/travle/여행 테마.png" alt="" />
+
+              <h3>여행 테마</h3>
+            </div>
+
+            <!-- 여행 테마 체크박스 -->
+
+            <ul class="theme-list">
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="nature" />
+
+                  <span> 자연/힐링 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="city" />
+
+                  <span> 도시/문화 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="food" />
+
+                  <span> 맛집/미식 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="activity" />
+
+                  <span> 액티비티 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="history" />
+
+                  <span> 역사/전통 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="resort" />
+
+                  <span> 휴양/리조트 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="photo" />
+
+                  <span> 감성/사진 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="family" />
+
+                  <span> 가족여행 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="solo" />
+
+                  <span> 혼자여행 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="friend" />
+
+                  <span> 친구와 여행 </span>
+                </label>
+              </li>
+
+              <li>
+                <label>
+                  <input type="checkbox" name="theme" value="couple" />
+
+                  <span> 커플여행 </span>
+                </label>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- TRAVEL LIST AREA -->
+
+          <section class="travel-list-area">
+            <!-- TITLE + SEARCH -->
+
+            <div class="travel-top">
+              <!-- TITLE -->
+
+              <div class="travle-title">
+                <p class="travle-title-small">TRiPPi가 추천하는</p>
+
+                <div class="travel-title-main">
+                  <h1>여행지 찾기</h1>
+
+                  <!-- 비행기 이미지 -->
+
+                  <div class="tralve-title-deco">
+                    <img src="./img/travle/비행기.png" alt="" />
+                  </div>
+                </div>
+
+                <p class="travle-title-description">
+                  좋은 여행은 <br />
+
+                  언제나 여기서 시작돼요 !
+                </p>
+              </div>
+
+              <!-- SEARCH -->
+
+              <div class="travel-search">
+                <form action="#" method="get">
+                  <label for="travel-search" class="blind"> 여행지 검색 </label>
+
+                  <div class="travel-search-box">
+                    <!-- 검색 아이콘 -->
+
+                    <img
+                      src="./img/travle/검색.png"
+                      alt=""
+                      class="travel-search-icon"
+                    />
+
+                    <input
+                      type="text"
+                      id="travel-search"
+                      name="keyword"
+                      placeholder="어디로 떠나고 싶나요 ?"
+                    />
+
+                    <button type="submit">검색</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- TAB -->
+
+            <div class="travel-tab">
+              <button type="button" class="active">전체</button>
+
+              <button type="button">국내</button>
+
+              <button type="button">해외</button>
+
+              <button type="button">인기순</button>
+
+              <button type="button">최신순</button>
+            </div>
+
+            <!-- TRAVEL CARD LIST -->
+
+            <div class="travel-card-list">
+              <!--CARD 01 : 제주도 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/제주.png" alt="제주도" />
+
+                  <span class="travel-country domestic"> 국내 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="제주도 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 제주도 </span>
+                  </h2>
+
+                  <p>바람이 머무는, 느린 여행</p>
+
+                  <div class="travel-tags">
+                    <span>#자연</span>
+                    <span>#힐링</span>
+                    <span>#맛집</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 02 : 부산 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/부산.png" alt="부산" />
+
+                  <span class="travel-country domestic"> 국내 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="부산 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 부산 </span>
+                  </h2>
+
+                  <p>도시 속, 특별한 여유</p>
+
+                  <div class="travel-tags">
+                    <span>#바다</span>
+                    <span>#도시</span>
+                    <span>#감성</span>
+                  </div>
+                </div>
+              </article>
+
+              <!--CARD 03 : 경주 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/경주.png" alt="경주" />
+
+                  <span class="travel-country domestic"> 국내 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="경주 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 경주 </span>
+                  </h2>
+
+                  <p>시간이 머무는 도시</p>
+
+                  <div class="travel-tags">
+                    <span>#역사</span>
+                    <span>#전통</span>
+                    <span>#사진</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 04 : 파리 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/파리.png" alt="파리" />
+
+                  <span class="travel-country overseas"> 해외 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="파리 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 파리 </span>
+                  </h2>
+
+                  <p>언젠가 꼭, 나를 위한 여행</p>
+
+                  <div class="travel-tags">
+                    <span>#유럽</span>
+                    <span>#문화</span>
+                    <span>#낭만</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 05 : 산토리니 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/산토리니.png" alt="산토리니" />
+
+                  <span class="travel-country overseas"> 해외 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="산토리니 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 산토리니 </span>
+                  </h2>
+
+                  <p>꿈처럼 눈부신 하루</p>
+
+                  <div class="travel-tags">
+                    <span>#유럽</span>
+                    <span>#휴양</span>
+                    <span>#관광</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 06 : 도쿄 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/도쿄.png" alt="도쿄" />
+
+                  <span class="travel-country overseas"> 해외 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="도쿄 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 도쿄 </span>
+                  </h2>
+
+                  <p>설레는 일상이 있는 곳</p>
+
+                  <div class="travel-tags">
+                    <span>#도시</span>
+                    <span>#쇼핑</span>
+                    <span>#맛집</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 07 : 발리 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/발리.png" alt="발리" />
+
+                  <span class="travel-country overseas"> 해외 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="발리 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 발리 </span>
+                  </h2>
+
+                  <p>지금, 여기가 천국</p>
+
+                  <div class="travel-tags">
+                    <span>#휴양</span>
+                    <span>#힐링</span>
+                    <span>#리조트</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 08 : 뉴욕 -->
+
+              <article class="travel-card">
+                <div class="travel-card-image">
+                  <img src="/img/travle/뉴욕.png" alt="뉴욕" />
+
+                  <span class="travel-country overseas"> 해외 </span>
+
+                  <button
+                    type="button"
+                    class="travel-like"
+                    aria-label="뉴욕 찜하기"
+                  >
+                    <img src="/img/love.png" alt="" />
+                  </button>
+                </div>
+
+                <div class="travel-card-info">
+                  <h2>
+                    <img src="/img/travle/MapPin.png" alt="" />
+
+                    <span> 뉴욕 </span>
+                  </h2>
+
+                  <p>언제나 새로운, 특별한 도시</p>
+
+                  <div class="travel-tags">
+                    <span>#도시</span>
+                    <span>#문화</span>
+                    <span>#트렌드</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

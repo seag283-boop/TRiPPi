@@ -1,303 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRiPPi</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <script src="js/main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <!-- header -->
-        <header id="header">
-            <div class="header-inner">
-                <h1 class="logo">
-                    <a href="index.html"><img src="./img/LOGO.png" alt="LOGO"></a>
-                </h1>
+      <!-- header -->
+      <header id="header">
+        <div class="header-inner">
+          <h1 class="logo">
+            <a href="index.html"><img src="./img/LOGO.png" alt="LOGO" /></a>
+          </h1>
 
-                <nav class="gnb">
-                    <ul>
-                        <li class="active">
-                            <a href="index.html">홈</a>
-                        </li>
-                        <li>
-                            <a href="#">여행지 찾기</a>
-                        </li>
-                        <li>
-                            <a href="#">취향테스트</a>
-                        </li>
-                        <li>
-                            <a href="#">여행기록</a>
-                        </li>
-                        <li>
-                            <a href="#">마이페이지</a>
-                        </li>
-                    </ul>
-                </nav>
+          <nav class="gnb">
+            <ul>
+              <li class="active">
+                <a href="index.html">홈</a>
+              </li>
+              <li>
+                <a href="travel.html">여행지 찾기</a>
+              </li>
+              <li>
+                <a href="#">취향테스트</a>
+              </li>
+              <li>
+                <a href="#">여행기록</a>
+              </li>
+              <li>
+                <a href="#">마이페이지</a>
+              </li>
+            </ul>
+          </nav>
 
-                <div class="header-util">
-                    <button type="button" class="search">
-                        <img src="./img/icon/search.png" alt="검색">
-                    </button>
+          <div class="header-util">
+            <button type="button" class="search">
+              <img src="./img/icon/search.png" alt="검색" />
+            </button>
 
-                    <button type="button" class="search">
-                        <img src="./img/icon/favorite.png" alt="찜">
-                    </button>
+            <button type="button" class="search">
+              <img src="./img/icon/favorite.png" alt="찜" />
+            </button>
 
-                    <button type="button" class="search">
-                        <img src="./img/icon/mypage.png" alt="마이페이지">
-                    </button>
-                </div>
+            <button type="button" class="search">
+              <img src="./img/icon/mypage.png" alt="마이페이지" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- //header -->
 
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h2>
+              너의 취향으로 떠나는 <br />
+              새로운 여행
+            </h2>
+
+            <p>
+              좋은 곳에서, 좋은 너와, <br />
+              더 좋은 하루를 찾아가자 !
+            </p>
+
+            <a href="#" class="hero-btn">
+              내 여행 취향 찾기
+              <span>→</span>
+            </a>
+          </div>
+
+          <div class="hero-character">
+            <img src="./img/main 여행하는 토끼.png" alt="여행하는 토끼" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY  -->
+      <section class="category">
+        <div class="category-inner">
+          <a href="#" class="category-item">
+            <img src="./img/여행지 추천 아이콘.png" alt="" />
+            <span>여행지 추천</span>
+          </a>
+
+          <a href="#" class="category-item">
+            <img src="./img/맛집 아이콘.png" alt="" />
+            <span>맛집</span>
+          </a>
+
+          <a href="#" class="category-item">
+            <img src="./img/카페 아이콘.png" alt="" />
+            <span>카페</span>
+          </a>
+
+          <a href="#" class="category-item">
+            <img src="./img/액티비티 아이콘.png" alt="" />
+            <span>액티비티</span>
+          </a>
+
+          <a href="#" class="category-item">
+            <img src="./img/숙소 아이콘.png" alt="" />
+            <span>숙소</span>
+          </a>
+
+          <a href="#" class="category-item">
+            <img src="./img/나의 여행 아이콘.png" alt="" />
+            <span>나의 여행</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="travel">
+        <div class="travel-inner">
+          <div class="section-title">
+            <div>
+              <span>TRiPPi가 추천하는</span>
+              <h2>이번달 여행지</h2>
             </div>
-        </header>
-        <!-- //header -->
+            <p>지금, 가장 인기있는 여행지를 만나보세요 !</p>
+          </div>
 
-        <section class="hero">
+          <div class="travel-list">
+            <!-- 제주 -->
+            <article class="travel-card">
+              <div class="card-image">
+                <img src="./img/main 제주.png" alt="제주도" />
+                <span class="badge best">
+                  <span class="badge-text">BEST</span>
+                </span>
+                <button class="like-btn">
+                  <img src="./img/love.png" alt="찜" />
+                </button>
+              </div>
 
-            <div class="hero-inner">
+              <div class="card-info">
+                <strong>
+                  <img src="./img/icon/MapPin.png" alt="" /> 제주도</strong
+                >
+                <p>바람이 머무는, 느린 여행</p>
 
-                <div class="hero-text">
-                    <h2>너의 취향으로 떠나는 <br>
-                        새로운 여행</h2>
-
-                    <p>좋은 곳에서, 좋은 너와, <br>
-                        더 좋은 하루를 찾아가자 !
-                    </p>
-
-                    <a href="#" class="hero-btn">
-                        내 여행 취향 찾기
-                        <span>→</span>
-                    </a>
+                <div class="tags">
+                  <span>#자연</span>
+                  <span>#힐링</span>
+                  <span>#맛집</span>
                 </div>
+              </div>
+            </article>
 
-                <div class="hero-character">
-                    <img src="./img/main 여행하는 토끼.png" alt="여행하는 토끼">
+            <!-- 부산 -->
+            <article class="travel-card">
+              <div class="card-image">
+                <img src="./img/main 부산.png" alt="부산" />
+                <span class="badge emotion">
+                  <span class="badge-text">감성</span>
+                </span>
+                <button class="like-btn">
+                  <img src="./img/love.png" alt="찜" />
+                </button>
+              </div>
+
+              <div class="card-info">
+                <strong><img src="./img/icon/MapPin.png" alt="" /> 부산</strong>
+                <p>도시 속, 특별한 여유</p>
+
+                <div class="tags">
+                  <span>#바다</span>
+                  <span>#카페</span>
+                  <span>#도시여행</span>
                 </div>
+              </div>
+            </article>
 
-            </div>
-        </section>
+            <!-- 교토 -->
+            <article class="travel-card">
+              <div class="card-image">
+                <img src="./img/main 교토.png" alt="교토" />
+                <span class="badge new">
+                  <span class="badge-text">NEW</span>
+                </span>
+                <button class="like-btn">
+                  <img src="./img/love.png" alt="찜" />
+                </button>
+              </div>
 
-        <!-- CATEGORY  -->
-        <section class="category">
-            <div class="category-inner">
-                <a href="#" class="category-item">
-                    <img src="./img/여행지 추천 아이콘.png" alt="">
-                    <span>여행지 추천</span>
-                </a>
+              <div class="card-info">
+                <strong><img src="./img/icon/MapPin.png" alt="" /> 교토</strong>
+                <p>걷는 모든 순간이 영화처럼</p>
 
-                <a href="#" class="category-item">
-                    <img src="./img/맛집 아이콘.png" alt="">
-                    <span>맛집</span>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="./img/카페 아이콘.png" alt="">
-                    <span>카페</span>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="./img/액티비티 아이콘.png" alt="">
-                    <span>액티비티</span>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="./img/숙소 아이콘.png" alt="">
-                    <span>숙소</span>
-                </a>
-
-                <a href="#" class="category-item">
-                    <img src="./img/나의 여행 아이콘.png" alt="">
-                    <span>나의 여행</span>
-                </a>
-
-            </div>
-        </section>
-
-        <section class="travel">
-            <div class="travel-inner">
-                <div class="section-title">
-                    <div>
-                        <span>TRiPPi가 추천하는</span>
-                        <h2>이번달 여행지</h2>
-                    </div>
-                    <p>지금, 가장 인기있는 여행지를 만나보세요 !</p>
+                <div class="tags">
+                  <span>#일본</span>
+                  <span>#감성</span>
+                  <span>#사진</span>
                 </div>
+              </div>
+            </article>
 
-                <div class="travel-list">
-                    <!-- 제주 -->
-                    <article class="travel-card">
-                        <div class="card-image">
-                            <img src="./img/main 제주.png" alt="제주도">
-                            <span class="badge best">
-                                <span class="badge-text">BEST</span>
-                            </span>
-                            <button class="like-btn">
-                                <img src="./img/love.png" alt="찜">
-                            </button>
-                        </div>
+            <!-- 파리 -->
+            <article class="travel-card">
+              <div class="card-image">
+                <img src="./img/main 파리.png" alt="파리" />
+                <span class="badge hot">
+                  <span class="badge-text">HOT</span>
+                </span>
+                <button class="like-btn">
+                  <img src="./img/love.png" alt="찜" />
+                </button>
+              </div>
 
-                        <div class="card-info">
-                            <strong> <img src="./img/icon/MapPin.png" alt="">
-                                제주도</strong>
-                            <p>바람이 머무는, 느린 여행</p>
+              <div class="card-info">
+                <strong><img src="./img/icon/MapPin.png" alt="" /> 파리</strong>
+                <p>언제나 꼭, 나를 위한 여행</p>
 
-                            <div class="tags">
-                                <span>#자연</span>
-                                <span>#힐링</span>
-                                <span>#맛집</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 부산 -->
-                    <article class="travel-card">
-                        <div class="card-image">
-                            <img src="./img/main 부산.png" alt="부산">
-                            <span class="badge emotion ">
-                                <span class="badge-text">감성</span>
-                            </span>
-                            <button class="like-btn">
-                                <img src="./img/love.png" alt="찜">
-                            </button>
-                        </div>
-
-                        <div class="card-info">
-                            <strong><img src="./img/icon/MapPin.png" alt="">
-                                부산</strong>
-                            <p>도시 속, 특별한 여유</p>
-
-                            <div class="tags">
-                                <span>#바다</span>
-                                <span>#카페</span>
-                                <span>#도시여행</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 교토 -->
-                    <article class="travel-card">
-                        <div class="card-image">
-                            <img src="./img/main 교토.png" alt="교토">
-                            <span class="badge new">
-                                <span class="badge-text">NEW</span>
-                            </span>
-                            <button class="like-btn">
-                                <img src="./img/love.png" alt="찜">
-                            </button>
-                        </div>
-
-                        <div class="card-info">
-                            <strong><img src="./img/icon/MapPin.png" alt="">
-                                교토</strong>
-                            <p>걷는 모든 순간이 영화처럼</p>
-
-                            <div class="tags">
-                                <span>#일본</span>
-                                <span>#감성</span>
-                                <span>#사진</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 파리 -->
-                    <article class="travel-card">
-                        <div class="card-image">
-                            <img src="./img/main 파리.png" alt="파리">
-                            <span class="badge hot ">
-                                <span class="badge-text">HOT</span>
-                            </span>
-                            <button class="like-btn">
-                                <img src="./img/love.png" alt="찜">
-                            </button>
-                        </div>
-
-                        <div class="card-info">
-                            <strong><img src="./img/icon/MapPin.png" alt="">
-                                파리</strong>
-                            <p>언제나 꼭, 나를 위한 여행</p>
-
-                            <div class="tags">
-                                <span>#유럽</span>
-                                <span>#문화</span>
-                                <span>#낭만</span>
-                            </div>
-                        </div>
-                    </article>
+                <div class="tags">
+                  <span>#유럽</span>
+                  <span>#문화</span>
+                  <span>#낭만</span>
                 </div>
-            </div>
-        </section>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section class="banner-section">
+        <div class="banner test-banner">
+          <div class="banner-character">
+            <img src="./img/main banner 토끼 1.png" alt="" />
+          </div>
+          <div class="banner-text">
+            <p>나에게 맞는 여행이 궁금하다면 ?</p>
+            <strong>취향 테스트로 시작해보세요 !</strong>
+            <a href="#">지금 테스트하기 →</a>
+          </div>
+        </div>
 
-        <section class="banner-section">
-            <div class="banner test-banner">
-                <div class="banner-character">
-                    <img src="./img/main banner 토끼 1.png" alt="">
-                </div>
-                <div class="banner-text">
-                    <p>나에게 맞는 여행이 궁금하다면 ?</p>
-                    <strong>취향 테스트로 시작해보세요 !</strong>
-                    <a href="#">지금 테스트하기 →</a>
-                </div>
+        <div class="banner record-banner">
+          <div class="banner-character">
+            <img src="./img/main banner 토끼 2.png" alt="" />
+          </div>
+          <div class="banner-text">
+            <p>TRiPPi와 함께</p>
+            <strong>나만의 여행을 기록해요 !</strong>
+            <a href="#">나의 여행 기록하기 →</a>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer id="footer">
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="./img/LOGO.png" alt="TRiPPi" />
+              <p>너의 취향으로 떠나는 새로운 여행</p>
             </div>
 
+            <nav class="footer-menu">
+              <a href="#">여행지 찾기</a>
+              <a href="#">취향테스트</a>
+              <a href="#">여행기록</a>
+              <a href="#">마이페이지</a>
+            </nav>
+          </div>
 
-            <div class="banner record-banner">
-                <div class="banner-character">
-                    <img src="./img/main banner 토끼 2.png" alt="">
-                </div>
-                <div class="banner-text">
-                    <p>TRiPPi와 함께</p>
-                    <strong>나만의 여행을 기록해요 !</strong>
-                    <a href="#">나의 여행 기록하기 →</a>
-                </div>
+          <div class="footer-bottom">
+            <div class="footer-info">
+              <span>© 2026 TRiPPi. All rights reserved.</span>
             </div>
-        </section>
-        <!-- footer -->
-        <footer id="footer">
-            <div class="footer-inner">
 
-                <div class="footer-top">
-
-                    <div class="footer-logo">
-                        <img src="./img/LOGO.png" alt="TRiPPi">
-                        <p>너의 취향으로 떠나는 새로운 여행</p>
-                    </div>
-
-                    <nav class="footer-menu">
-                        <a href="#">여행지 찾기</a>
-                        <a href="#">취향테스트</a>
-                        <a href="#">여행기록</a>
-                        <a href="#">마이페이지</a>
-                    </nav>
-
-                </div>
-
-                <div class="footer-bottom">
-
-                    <div class="footer-info">
-                        <span>© 2026 TRiPPi. All rights reserved.</span>
-                    </div>
-
-                    <div class="footer-link">
-                        <a href="#">개인정보처리방침</a>
-                        <a href="#">이용약관</a>
-                        <a href="#">문의하기</a>
-                    </div>
-
-                </div>
-
+            <div class="footer-link">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이용약관</a>
+              <a href="#">문의하기</a>
             </div>
-        </footer>
-        <!-- //footer -->
+          </div>
+        </div>
+      </footer>
+      <!-- //footer -->
     </div>
-</body>
-
+  </body>
 </html>
