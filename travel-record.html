@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECORD</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/travel-record.css" />
+
+    <script src="js/trvel-record.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <div class="header-inner">
+                <h1 class="logo">
+                    <a href="index.html"><img src="./img/LOGO.png" alt="LOGO" /></a>
+                </h1>
+
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="index.html">홈</a>
+                        </li>
+                        <li>
+                            <a href="travel.html">여행지 찾기</a>
+                        </li>
+                        <li class="active">
+                            <a href="travel-record.html">취향테스트</a>
+                        </li>
+                        <li>
+                            <a href="#">여행기록</a>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-util">
+                    <button type="button" class="search">
+                        <img src="./img/icon/search.png" alt="검색" />
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/favorite.png" alt="찜" />
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/mypage.png" alt="마이페이지" />
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <main class="travel-record-page">
+            <!-- hero -->
+            <section class="record-hero">
+                <div class="record-hero-inner">
+                    <img src="/img/record/상단 이미지.png" alt="" class="record-hero-bg">
+                    <div class="record-hero-text">
+                        <p>여행의 순간을,</p>
+                        <p>오래도록 기록해요 !</p>
+                        <span>TRiPPi와 함께 <br> 나만의 여행 이야기를 남겨보세요.</span>
+                    </div>
+                    <img src="/img/record/상단 토끼 이미지.png" alt="" class="record-hero-rabbit">
+                </div>
+
+            </section>
+
+            <section class="record-content">
+                <div class="record-top">
+                    <div class="record-teb">
+                        <button type="button" class="active">
+                            전체
+                        </button>
+                        <button type="button">
+                            국내
+                        </button>
+                        <button type="button">
+                            해외
+                        </button>
+                        <button type="button">
+                            나의 여행기
+                        </button>
+                        <button type="button">
+                            북마크한 여행기
+                        </button>
+                    </div>
+
+                    <button type="button" class="record-write-btn">
+                        <img src="/img/record/연필.png" alt="">
+                        <span>여행기 작성하기</span>
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="record-section-title">
+                    <div class="record-title-left">
+                        <img src="/img/record/카메라.png" alt="">
+                        <div>
+                            <h2>다른 사람들의 여행기</h2>
+                            <p>여행 속 특별한 이야기들을 만나보세요 !</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="record-more">전체보기 <span>›</span></a>
+                </div>
+
+                <div class="record-card-list">
+                    <!-- card 01 -->
+                    <article class="record-card">
+                        <div class="record-card-image">
+                            <img src="/img/record/부산.png" alt="부산">
+                            <button type="button" class="record-bookmark" aria-label="찜">
+                                <img src="/img/love.png" alt="">
+                            </button>
+                        </div>
+                        <div class="record-card-info">
+                            <h3>부산, 여름이 좋은 이유</h3>
+                            <p class="record-card-description">
+                                바다, 카페, 맛있는 음식까지! <br> 짧지만 너무 행복했던 2박 3일이었어요...
+                            </p>
+                            <div class="record-card-bottom">
+                                <div class="record-user">
+                                    <div class="record-user-image">
+                                        <img src="/img/record/free-icon-user-847969 1.png" alt="">
+                                    </div>
+                                    <div class="record-user-info">
+                                        <strong>시연</strong>
+                                        <span>2026.07.20</span>
+                                    </div>
+                                </div>
+                                <div class="record-card-actions">
+                                    <button type="button" class="record-like">
+                                        <img src="/img/record/heart.png" alt="">
+                                        <span>132</span>
+                                    </button>
+                                    <button type="button" class="record-save"><img src="/img/record/bookmark.png"
+                                            alt=""></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- card 02 -->
+                    <article class="record-card">
+                        <div class="record-card-image">
+                            <img src="/img/record/교토.png" alt="교토">
+                            <button type="button" class="record-bookmark" aria-label="찜">
+                                <img src="/img/love.png" alt="">
+                            </button>
+                        </div>
+                        <div class="record-card-info">
+                            <h3>교토 감성 여행기</h3>
+                            <p class="record-card-description">
+                                조용한 거리와 따뜻한 분위기, <br> 교토는 정말 하루가 짧게 느껴졌어요.
+                            </p>
+                            <div class="record-card-bottom">
+                                <div class="record-user">
+                                    <div class="record-user-image">
+                                        <img src="/img/record/free-icon-user-847969 1.png" alt="">
+                                    </div>
+                                    <div class="record-user-info">
+                                        <strong>세아</strong>
+                                        <span>2026.01.02</span>
+                                    </div>
+                                </div>
+                                <div class="record-card-actions">
+                                    <button type="button" class="record-like">
+                                        <img src="/img/record/heart.png" alt="">
+                                        <span>132</span>
+                                    </button>
+                                    <button type="button" class="record-save"><img src="/img/record/bookmark.png"
+                                            alt=""></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- card 03 -->
+                    <article class="record-card">
+                        <div class="record-card-image">
+                            <img src="/img/record/강릉.png" alt="강릉">
+                            <button type="button" class="record-bookmark" aria-label="찜">
+                                <img src="/img/love.png" alt="">
+                            </button>
+                        </div>
+                        <div class="record-card-info">
+                            <h3>강릉, 우리를 위한 여행</h3>
+                            <p class="record-card-description">
+                                예쁜 카페도 가고, 바다도 보고, <br> 이번 여행은 온전히 우리에게 집중하는 시간이었어요.
+                            </p>
+                            <div class="record-card-bottom">
+                                <div class="record-user">
+                                    <div class="record-user-image">
+                                        <img src="/img/record/free-icon-user-847969 1.png" alt="">
+                                    </div>
+                                    <div class="record-user-info">
+                                        <strong>유빈</strong>
+                                        <span>2026.-4.10</span>
+                                    </div>
+                                </div>
+                                <div class="record-card-actions">
+                                    <button type="button" class="record-like">
+                                        <img src="/img/record/heart.png" alt="">
+                                        <span>132</span>
+                                    </button>
+                                    <button type="button" class="record-save"><img src="/img/record/bookmark.png"
+                                            alt=""></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- card 04 -->
+                    <article class="record-card">
+                        <div class="record-card-image">
+                            <img src="/img/record/다낭.png" alt="다낭">
+                            <button type="button" class="record-bookmark" aria-label="찜">
+                                <img src="/img/love.png" alt="">
+                            </button>
+                        </div>
+                        <div class="record-card-info">
+                            <h3>다낭 3박4일, 행복했던 시간</h3>
+                            <p class="record-card-description">
+                                맛있는 음식, 예쁜 풍경, 그리고 좋은 사람들! <br> 다낭은 정말 힐링이었어요!
+                            </p>
+                            <div class="record-card-bottom">
+                                <div class="record-user">
+                                    <div class="record-user-image">
+                                        <img src="/img/record/free-icon-user-847969 1.png" alt="">
+                                    </div>
+                                    <div class="record-user-info">
+                                        <strong>정서</strong>
+                                        <span>2026.03.02</span>
+                                    </div>
+                                </div>
+                                <div class="record-card-actions">
+                                    <button type="button" class="record-like">
+                                        <img src="/img/record/heart.png" alt="">
+                                        <span>132</span>
+                                    </button>
+                                    <button type="button" class="record-save"><img src="/img/record/bookmark.png"
+                                            alt=""></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+
+                <section class="record-bottom-banner">
+                    <div class="record-bottom-plane">
+                        <img src="/img/record/비행기.png" alt="">
+                    </div>
+                    <div class="record-bottom-rabbit">
+                        <img src="/img/record/배너 토끼.png" alt="">
+                    </div>
+                    <div class="record-bottom-text">
+                        <p>지금, 당신의 여행을 기록해보세요.</p>
+                        <p>소중한 순간이 더 특별해질거예요.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+
+        <!-- footer -->
+        <footer id=" footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="./img/LOGO.png" alt="TRiPPi" />
+                        <p>너의 취향으로 떠나는 새로운 여행</p>
+                    </div>
+
+                    <nav class="footer-menu">
+                        <a href="#">여행지 찾기</a>
+                        <a href="#">취향테스트</a>
+                        <a href="#">여행기록</a>
+                        <a href="#">마이페이지</a>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-info">
+                        <span>© 2026 TRiPPi. All rights reserved.</span>
+                    </div>
+
+                    <div class="footer-link">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
