@@ -1,0 +1,1079 @@
+@charset "utf-8";
+
+
+/* =========================================================
+   TRAVEL PAGE
+========================================================= */
+
+.travel-page {
+    width: 100%;
+    background: #FAF9F5;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.travel-hero {
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+}
+
+.travel-hero-inner {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.travel-hero-bg {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 1;
+}
+
+.travel-hero-text {
+    position: absolute;
+
+    left: 22%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 3;
+
+    font-family: 'OngleipEoyeonce';
+
+    color: #34475B;
+}
+
+.travel-hero-text p {
+    margin: 0;
+    font-size: 50px !important;
+    color: #272E38;
+
+    line-height: 1.2;
+    transform: rotate(-10deg);
+    font-weight: 500;
+}
+
+.travel-hero-text p:nth-child(2) {
+    margin-top: 5px;
+    font-size: 50px;
+    color: #272E38;
+
+    transform: rotate(-10deg);
+}
+
+.travel-hero-text span {
+    display: block;
+
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-top: 30px !important;
+
+    font-family: 'OngleipEoyeonce' !important;
+
+    font-size: 32px !important;
+
+    color: #34475B;
+}
+
+.travel-hero-rabbit {
+    position: absolute;
+
+    left: 1300px;
+    bottom: 0px;
+
+    width: 330px;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 4;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.travel-hero-text {
+    position: absolute;
+
+    left: 22%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 3;
+
+    font-family: 'OngleipEoyeonce';
+
+    color: #34475B;
+}
+
+.travel-hero-text p {
+    margin: 0;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+}
+
+.travel-hero-text p:nth-child(2) {
+    margin-top: 4px;
+}
+
+.travel-hero-text span {
+    display: block;
+
+    margin-top: 12px;
+
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 14px;
+
+    color: #34475B;
+}
+
+
+/* =========================================================
+   HERO RABBIT
+========================================================= */
+
+.travel-hero-rabbit {
+    position: absolute;
+
+    right: 8%;
+    bottom: -5px;
+
+    width: 300px;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 4;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.travel-breadcrumb {
+    width: 1200px;
+
+    margin-left: 80px;
+    margin-right: 0;
+
+    padding: 22px 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+
+.travel-breadcrumb a {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    text-decoration: none;
+
+    color: #777;
+}
+
+.travel-breadcrumb a span,
+.travel-breadcrumb>span:last-child {
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+.travel-breadcrumb a img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+.travel-breadcrumb .breadcrumb-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.travel-breadcrumb .breadcrumb-arrow img {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.travel-content {
+    width: calc(100% - 160px);
+
+    margin-left: 80px;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    gap: 70px;
+
+    padding-bottom: 120px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.travel-sidebar {
+    flex: 0 0 190px;
+
+    width: 190px;
+
+    order: 1;
+}
+
+
+/* =========================================================
+   SIDEBAR TITLE
+========================================================= */
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.sidebar-title img {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+}
+
+.sidebar-title h2 {
+    margin: 0;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #34475B;
+}
+
+
+/* =========================================================
+   DESTINATION MENU
+========================================================= */
+
+.destinatin-menu {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.destinatin-menu li {
+    width: 100%;
+}
+
+.destinatin-menu li a {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.destinatin-menu li a:hover {
+    background: #f3f8ff;
+}
+
+.destinatin-menu li.active a {
+    background: #C0DDF7;
+}
+
+.destinatin-menu li img {
+    width: 29px;
+    height: 29px;
+
+    margin-right: 12px;
+
+    object-fit: contain;
+}
+
+.destinatin-menu li span {
+    font-family: 'OngleipEoyeonce';
+
+    font-size: 25px;
+    font-weight: 500;
+
+    color: #34475B;
+}
+
+
+/* =========================================================
+   SIDEBAR DIVIDER
+========================================================= */
+
+.sidebar-divider {
+    width: 205px;
+    height: 1px;
+
+    margin: 30px 0;
+
+    background: #ECECED;
+}
+
+
+/* =========================================================
+   THEME TITLE
+========================================================= */
+
+.theme-title {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.theme-title img {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+}
+
+.theme-title h3 {
+    margin: 0;
+
+    font-family: 'OngleipEoyeonce';
+
+    font-size: 25px;
+
+    color: #34475B;
+}
+
+
+/* =========================================================
+   THEME LIST
+========================================================= */
+
+.theme-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.theme-list li {
+    width: 100%;
+}
+
+.theme-list label {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    font-family: 'OngleipEoyeonce';
+
+    cursor: pointer;
+
+    font-size: 23px;
+
+    color: #34475B;
+}
+
+.theme-list input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+
+    border: 1px solid #BDBEC4;
+    border-radius: 4px;
+
+    background: #F6F6F7;
+
+    cursor: pointer;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.theme-list input:checked {
+    border-color: #34475B;
+
+    background: #34475B;
+}
+
+.theme-list input:checked::after {
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+    top: 1px;
+
+    width: 5px;
+    height: 9px;
+
+    border: solid #fff;
+
+    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   TRAVEL LIST AREA
+========================================================= */
+
+.travel-list-area {
+    flex: 1;
+
+    min-width: 0;
+
+    order: 2;
+}
+
+
+/* =========================================================
+   TITLE + SEARCH
+========================================================= */
+
+.travel-top {
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.travle-title {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+
+    margin: 0;
+}
+
+.travle-title-small {
+    margin: 0;
+
+    font-family: 'OngleipEoyeonce';
+
+    font-size: 34px;
+    font-weight: 500;
+
+    color: #34475B;
+}
+
+
+/* =========================================================
+   TITLE MAIN
+========================================================= */
+
+.travel-title-main {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    white-space: nowrap;
+}
+
+.travel-title-main h1 {
+    flex-shrink: 0;
+
+    margin: 0;
+
+    font-family: 'OngleipEoyeonce';
+
+    font-size: 74px;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    color: #34475B;
+}
+
+
+/* =========================================================
+   AIRPLANE
+========================================================= */
+
+.tralve-title-deco {
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    margin: 0;
+}
+
+.tralve-title-deco img {
+    display: block;
+
+    width: 75px;
+    height: auto;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.travle-title-description {
+    flex-shrink: 0;
+
+    margin: 0;
+
+    font-family: 'OngleipEoyeonce';
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    white-space: nowrap;
+
+    color: #4D5A72;
+
+    transform: rotate(-10deg);
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.travel-search {
+    flex: 0 0 510px;
+
+    width: 510px;
+
+    transform: translateY(40px);
+
+    margin-top: 35px;
+}
+
+.travel-search form {
+    width: 100%;
+
+    margin: 0;
+}
+
+.travel-search-box {
+    width: 100%;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border: 2px solid #D9E6F1;
+
+    border-radius: 30px;
+
+    background: #fff;
+
+    overflow: hidden;
+}
+
+.travel-search-icon {
+    width: 22px;
+    height: 22px;
+
+    margin-left: 22px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.travel-search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    width: auto;
+    height: 100%;
+
+    margin: 0;
+
+    padding: 0 15px;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 14px;
+
+    color: #333;
+}
+
+.travel-search-box input::placeholder {
+    color: #aaa;
+}
+
+.travel-search-box button {
+    width: 85px;
+    height: 46px;
+
+    margin-right: 5px;
+
+    flex-shrink: 0;
+
+    border: 0;
+
+    border-radius: 25px;
+
+    background: #72b4ff;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.travel-search-box button:hover {
+    background: #5c9fe8;
+}
+
+
+/* =========================================================
+   TAB
+========================================================= */
+
+.travel-tab {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    border-bottom: 0;
+}
+
+.travel-tab button {
+    position: relative;
+
+    height: 42px;
+
+    padding: 0 30px;
+
+    border: 0;
+
+    border-radius: 25px;
+
+    background: transparent;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 14px;
+
+    color: #333;
+
+    cursor: pointer;
+}
+
+.travel-tab button:first-child {
+    padding-left: 30px;
+}
+
+.travel-tab button.active {
+    background: #E5F2FC;
+
+    color: #222;
+
+    font-weight: 600;
+}
+
+.travel-tab button.active::after {
+    display: none;
+}
+
+/* =========================================================
+   CARD LIST
+========================================================= */
+
+.travel-card-list {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 361px);
+
+    column-gap: 14px;
+    row-gap: 20px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+
+.travel-card {
+    width: 361px;
+    height: 228px;
+
+    box-sizing: border-box;
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid #eeeeee;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.travel-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+.travel-card-image {
+    position: relative;
+
+    width: 346px;
+    height: 134px;
+
+    margin: 7px auto 0;
+
+    overflow: hidden;
+}
+
+.travel-card-image>img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.travel-card:hover .travel-card-image>img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   COUNTRY
+========================================================= */
+
+.travel-country {
+    position: absolute;
+
+    left: 15px;
+    top: 15px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+.travel-country.domestic {
+    background: #65b4f4;
+}
+
+.travel-country.overseas {
+    background: #8b98ed;
+}
+
+/* =========================================================
+   LIKE
+========================================================= */
+.travel-like {
+    position: absolute;
+
+    top: 13px;
+    right: 13px;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: transform 0.2s ease;
+}
+
+.travel-like:hover {
+    transform: scale(1.08);
+}
+
+.travel-like img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+.travel-card-info {
+    box-sizing: border-box;
+
+    padding: 7px 18px 0;
+}
+
+
+/* 여행지 이름 */
+
+.travel-card-info h2 {
+    margin: 0 0 4px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-family: "Pretendard", sans-serif;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    color: #222;
+}
+
+.travel-card-info h2 img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.travel-card-info h2 span {
+    margin-bottom: -10px;
+    display: block;
+    font-family: 'OngleipEoyeonce';
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+
+/* 설명 */
+
+.travel-card-info p {
+    margin: 0;
+
+    font-family: 'OngleipEoyeonce';
+    margin-left: 20px;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+    color: #5D7A97;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.travel-tags {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 0px;
+}
+
+.travel-tags span {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 21px;
+
+    box-sizing: border-box;
+
+    padding: 0 9px;
+    margin-left: 20px;
+
+    border-radius: 15px;
+
+    background: #f2f7fc;
+    font-family: 'OngleipEoyeonce';
+
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    color: #34475B;
+}
+
+/* =========================================================
+   BLIND
+========================================================= */
+
+.blind {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    margin: -1px;
+    padding: 0;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+.travel-like.active {
+    background: #fff;
+}
+
+.travel-like.active img {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(80%) saturate(1500%) hue-rotate(320deg);
+}
+
+/* 여행 페이지 푸터 위치 */
+#footer {
+    margin-top: -50px;
+}
