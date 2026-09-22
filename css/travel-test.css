@@ -1,0 +1,805 @@
+@charset "utf-8";
+
+
+/* =========================================================
+   TRAVEL TEST
+========================================================= */
+
+.travel-test-page {
+    width: 100%;
+    min-width: 1920px;
+    background: #F8F4EE;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.test-hero {
+    width: 100%;
+    padding-top: 0;
+}
+
+.test-hero-inner {
+    position: relative;
+
+    width: 1820px;
+    height: 340px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+}
+
+
+/* HERO BACKGROUND */
+
+.test-hero-bg {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 1820px;
+    height: 340px;
+
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+
+/* HERO TEXT */
+
+.test-hero-text {
+    position: absolute;
+
+    left: 390px;
+    top: 42px;
+
+    z-index: 3;
+
+    text-align: center;
+}
+
+
+.test-hero-text h1 {
+    margin: 0;
+
+    color: #263C52;
+    margin-top: 20px;
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.15;
+
+    letter-spacing: 1px;
+}
+
+
+.test-hero-text p {
+    margin: 16px 0 20px;
+
+    color: #273B4F;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* HERO START BUTTON */
+
+.test-start-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    width: 275px;
+    height: 53px;
+
+    margin: 0 auto;
+
+    border-radius: 30px;
+
+    background: #5AB8F4;
+
+    color: #ffffff;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 23px;
+    font-weight: 5ss00;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+
+.test-start-btn:hover {
+    background: #45A9EA;
+    transform: translateY(-2px);
+}
+
+
+.test-start-btn .arrow {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: -5px;
+}
+
+
+/* HERO RABBIT */
+
+.test-hero-rabbit {
+    position: absolute;
+
+    right: 345px;
+    bottom: -10px;
+
+    z-index: 4;
+
+    width: auto;
+    height: 285px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   TEST INTRO
+========================================================= */
+
+.test-intro {
+    width: 100%;
+
+    padding-top: 22px;
+}
+
+
+.test-intro-inner {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 1480px;
+    height: 228px;
+    justify-content: center;
+    margin: 0 auto;
+
+    border: 1px solid #E7E0D7;
+    border-radius: 25px;
+
+    background: #FFFDF9;
+
+    box-shadow: 0 3px 8px rgba(74, 63, 53, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* LEFT RABBIT */
+
+.test-intro-character {
+    position: relative;
+
+    width: 340px;
+    height: 225px;
+}
+
+
+.test-intro-character img {
+    position: absolute;
+
+    left: 55px;
+    bottom: -4px;
+
+    width: 390px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* CENTER CONTENT */
+
+.test-intro-content {
+    width: 560px;
+
+    text-align: center;
+}
+
+
+.test-intro-label {
+    margin: 0;
+    margin-top: 5px;
+
+    color: #52B6F4;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+.test-intro-content h2 {
+    margin: 0;
+    margin-top: -5px;
+
+    color: #263C52;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+
+.test-intro-description {
+    margin: 3px 0 3px;
+
+    color: #78838D;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.15;
+}
+
+
+/* INTRO BUTTON */
+
+.test-intro-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 260px;
+    height: 48px;
+
+    border-radius: 26px;
+
+    background: #5AB8F4;
+
+    color: #ffffff;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+
+.test-intro-btn:hover {
+    background: #45A9EA;
+    transform: translateY(-2px);
+}
+
+
+/* RIGHT INFO */
+
+.test-intro-info {
+    position: relative;
+
+    width: 480px;
+    height: 100%;
+}
+
+
+.test-check-list {
+    position: absolute;
+
+    left: 40px;
+    top: 35px;
+
+    width: 260px;
+
+    padding: 22px 24px;
+
+    background: #FFF4C9;
+
+    transform: rotate(-5deg);
+
+    box-shadow: 2px 4px 8px rgba(82, 66, 40, 0.08);
+}
+
+
+.test-check-list::before {
+    content: "";
+
+    position: absolute;
+
+    left: 80px;
+    top: -13px;
+
+    width: 100px;
+    height: 22px;
+
+    background: rgba(96, 181, 240, 0.55);
+
+    transform: rotate(-3deg);
+}
+
+
+.test-check-list p {
+    display: flex;
+
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 0 8px;
+
+    color: #35485A;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+.test-check-list p:last-child {
+    margin-bottom: 0;
+}
+
+
+.test-check-list p span {
+    color: #4EAEF0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* STAMP */
+
+.test-stamp {
+    position: absolute;
+
+    right: 22px;
+    bottom: 25px;
+
+    width: 100px;
+    height: auto;
+
+    object-fit: contain;
+
+    transform: rotate(8deg);
+}
+
+
+/* =========================================================
+   TRAVEL TYPE SECTION
+========================================================= */
+
+.travel-type-section {
+    width: 1480px;
+
+    margin: 68px auto 0;
+}
+
+
+/* SECTION TITLE */
+
+.travel-type-title {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+
+.travel-type-title-left {
+    display: flex;
+
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+.travel-type-plane {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #53B5F4;
+
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+}
+
+
+.travel-type-title h2 {
+    margin: 0;
+
+    color: #263C52;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+.travel-type-title p {
+    margin: 5px 0 0;
+
+    color: #89929A;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   TYPE CARD LIST
+========================================================= */
+
+.travel-type-list {
+    display: flex;
+
+    gap: 8px;
+
+    width: 100%;
+}
+
+
+/* CARD */
+
+.travel-type-card {
+    position: relative;
+
+    width: 244px;
+    height: 220px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 6px rgba(67, 62, 57, 0.12);
+
+    overflow: hidden;
+}
+
+
+.travel-type-link {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TRAVEL PHOTO
+========================================================= */
+
+.travel-type-photo {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 151px;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+.travel-type-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   RABBIT
+========================================================= */
+
+.travel-type-rabbit {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -0px;
+    left: 78px;
+    top: 77px;
+
+    width: 120px;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MEMO PAPER
+========================================================= */
+
+.travel-type-note {
+    position: absolute;
+    margin-bottom: 25px;
+    margin-left: -2px;
+
+    left: 12px;
+    bottom: 13px;
+
+    width: 100px;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 4;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.travel-type-content {
+    position: absolute;
+    margin-left: -15px;
+
+    left: 24px;
+    bottom: 20px;
+
+    z-index: 5;
+
+    width: 95px;
+
+    text-align: center;
+
+    pointer-events: none;
+}
+
+
+.travel-type-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #3E5365;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    transform: rotate(-8deg);
+}
+
+
+.travel-type-content p {
+    margin: 0;
+
+    color: #8C969E;
+    margin-bottom: -20px;
+    margin-top: 15px;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.travel-type-card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.travel-type-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 7px 15px rgba(67, 62, 57, 0.16);
+}
+
+
+/* =========================================================
+   CARD INDIVIDUAL POSITION
+========================================================= */
+
+
+/* 힐링형 */
+
+.travel-type-card:nth-child(1) .travel-type-rabbit {
+    left: 75px;
+    top: 78px;
+}
+
+.travel-type-card:nth-child(1) .travel-type-note {
+    left: 10px;
+    bottom: 12px;
+}
+
+
+/* 미식형 */
+
+.travel-type-card:nth-child(2) .travel-type-rabbit {
+    left: 76px;
+    top: 78px;
+}
+
+.travel-type-card:nth-child(2) .travel-type-note {
+    left: 10px;
+    bottom: 12px;
+}
+
+
+/* 도시탐험형 */
+
+.travel-type-card:nth-child(3) .travel-type-rabbit {
+    left: 75px;
+    top: 76px;
+}
+
+.travel-type-card:nth-child(3) .travel-type-note {
+    left: 10px;
+    bottom: 12px;
+}
+
+
+/* 자연사랑형 */
+
+.travel-type-card:nth-child(4) .travel-type-rabbit {
+    left: 76px;
+    top: 77px;
+}
+
+.travel-type-card:nth-child(4) .travel-type-note {
+    left: 10px;
+    bottom: 12px;
+}
+
+
+/* 문화체험형 */
+
+.travel-type-card:nth-child(5) .travel-type-rabbit {
+    left: 75px;
+    top: 76px;
+}
+
+.travel-type-card:nth-child(5) .travel-type-note {
+    left: 10px;
+    bottom: 12px;
+}
+
+
+/* 액티비티형 */
+
+.travel-type-card:nth-child(6) .travel-type-rabbit {
+    left: 75px;
+    top: 76px;
+}
+
+.travel-type-card:nth-child(6) .travel-type-note {
+    left: 10px;
+    bottom: 12px;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.test-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1480px;
+
+    margin: 45px auto 80px;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+}
+
+
+.test-bottom-left p,
+.test-bottom-right p {
+    margin: 0;
+
+    color: #A7B2BA;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+/* .test-bottom-center {
+    display: flex;
+
+    align-items: center;
+    gap: 7px;
+} */
+
+
+.pagination-dot {
+    display: block;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #D6DDE1;
+}
+
+
+.pagination-dot.active {
+    width: 9px;
+    height: 9px;
+
+    background: #59B8F4;
+}
+
+
+.test-bottom-right {
+    text-align: right;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+#footer {
+    width: 100%;
+}

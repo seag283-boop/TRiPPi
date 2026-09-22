@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+
+/* =========================================================
+   TEST PAGE
+========================================================= */
+
+.test-page {
+    width: 100%;
+    min-width: 1920px;
+    min-height: calc(100vh - 80px);
+
+    background: #FAF9F6;
+
+    padding: 65px 0 80px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.test-progress {
+    width: 900px;
+
+    margin: 0 auto;
+}
+
+
+.test-progress-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+}
+
+
+.test-progress-title {
+    color: #536A7D;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.test-progress-number {
+    color: #8C989F;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 15px;
+}
+
+
+.test-progress-number strong {
+    color: #263C52;
+
+    font-weight: 700;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+
+    border-radius: 5px;
+
+    background: #E8EDF0;
+
+    overflow: hidden;
+}
+
+
+.progress-current {
+    display: block;
+
+    width: 10%;
+    height: 100%;
+
+    border-radius: 5px;
+
+    background: #5AB8F4;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.test-question {
+    width: 900px;
+
+    margin: 65px auto 0;
+
+    text-align: center;
+}
+
+
+.question-number {
+    margin: 0 0 17px;
+
+    color: #5AB8F4;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.question-title {
+    margin: 0;
+
+    color: #344A5E;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.35;
+}
+
+
+.question-subtitle {
+    margin: 18px 0 0;
+
+    color: #8A959C;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   OPTIONS
+========================================================= */
+
+.test-options {
+    width: 900px;
+
+    margin: 48px auto 0;
+}
+
+
+.option-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   OPTION
+========================================================= */
+
+.test-option {
+    position: relative;
+
+    width: 100%;
+    height: 142px;
+
+    padding: 25px 55px 22px 70px;
+
+    border: 1px solid #E2E7EA;
+    border-radius: 15px;
+
+    background: #FFFFFF;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.test-option:hover {
+    border-color: #A9DDF8;
+
+    background: #FCFEFF;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(66, 112, 143, 0.08);
+}
+
+
+/* =========================================================
+   OPTION NUMBER
+========================================================= */
+
+.option-number {
+    position: absolute;
+
+    left: 24px;
+    top: 26px;
+
+    color: #B8C2C8;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   OPTION TITLE
+========================================================= */
+
+.option-title {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #344A5E;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   OPTION DESCRIPTION
+========================================================= */
+
+.option-description {
+    display: block;
+
+    color: #8A969D;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CHECK
+========================================================= */
+
+.option-check {
+    position: absolute;
+
+    right: 22px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    border: 1px solid #D3DDE2;
+    border-radius: 50%;
+
+    color: transparent;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SELECTED
+========================================================= */
+
+.test-option.selected {
+    border: 2px solid #5AB8F4;
+
+    background: #F2FAFF;
+
+    box-shadow:
+        0 5px 15px rgba(77, 170, 235, 0.12);
+}
+
+
+.test-option.selected .option-number {
+    color: #5AB8F4;
+}
+
+
+.test-option.selected .option-title {
+    color: #247BAE;
+}
+
+
+.test-option.selected .option-check {
+    border-color: #5AB8F4;
+
+    background: #5AB8F4;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.test-navigation {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 45px;
+}
+
+
+.prev-button,
+.next-button {
+    height: 52px;
+
+    border: 0;
+    border-radius: 28px;
+
+    font-family: "Pretendard", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.prev-button {
+    width: 150px;
+
+    background: #E9EEF1;
+
+    color: #70818D;
+}
+
+
+.prev-button:hover:not(:disabled) {
+    background: #DEE6EA;
+}
+
+
+.next-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 220px;
+
+    background: #5AB8F4;
+
+    color: #FFFFFF;
+}
+
+
+.next-button:hover {
+    background: #46A9E9;
+
+    transform: translateY(-2px);
+}
+
+
+.next-button span:last-child {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   DISABLED
+========================================================= */
+
+.prev-button:disabled {
+    opacity: 0.4;
+
+    cursor: default;
+}
+
+
+/* =========================================================
+   HEADER UTIL
+========================================================= */
+
+.header-util button {
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+}

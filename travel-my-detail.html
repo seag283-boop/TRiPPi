@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>나의 여행기 상세 | TRiPPi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/travel-my-detail.css">
+
+    <!-- JS -->
+    <script src="./js/travel-my-detail.js" defer></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+        <header id="header">
+
+            <div class="header-inner">
+
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./img/LOGO.png" alt="TRiPPi">
+                    </a>
+                </h1>
+
+
+                <nav class="gnb">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">홈</a>
+                        </li>
+
+                        <li>
+                            <a href="travel.html">여행지 찾기</a>
+                        </li>
+
+                        <li>
+                            <a href="travel-test.html">취향테스트</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="travel-record.html">여행기록</a>
+                        </li>
+
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <div class="header-util">
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/search.png" alt="검색">
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/favorite.png" alt="찜">
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/mypage.png" alt="마이페이지">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- //header -->
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+        <main class="travel-detail-page">
+
+            <div class="travel-detail-content">
+
+
+                <!-- =========================
+                     뒤로가기 + 토끼
+                ========================== -->
+                <div class="detail-top">
+
+                    <a href="travel-write-my.html" class="detail-back">
+                        <span>←</span>
+                        나의 여행기
+                    </a>
+
+                    <img class="detail-rabbit" src="./img/travel-write/상단 토끼.png" alt="">
+
+                </div>
+
+
+                <!-- =========================
+                     TITLE
+                ========================== -->
+                <section class="detail-header">
+
+                    <div class="detail-title-area">
+
+                        <!-- JS에서 데이터 삽입 -->
+                        <p class="detail-category"></p>
+
+                        <h1></h1>
+
+                        <p class="detail-subtitle"></p>
+
+
+                        <!-- 작성 정보 -->
+                        <div class="detail-meta">
+
+                            <div class="detail-author">
+
+                                <div class="author-image">
+                                    <img src="./img/travel-write/free-icon-user-847969 1.png" alt="작성자 프로필">
+                                </div>
+
+                                <strong>
+                                    여행토끼
+                                </strong>
+
+                            </div>
+
+                            <span class="meta-divider"></span>
+
+                            <!-- JS에서 작성일 삽입 -->
+                            <span class="detail-date"></span>
+
+                            <span class="meta-divider"></span>
+
+                            <!-- JS에서 조회수 삽입 -->
+                            <span>
+                                조회 <strong id="view-count"></strong>
+                            </span>
+
+                            <span class="meta-divider"></span>
+
+                            <!-- JS에서 댓글 수 삽입 -->
+                            <span>
+                                댓글 <strong id="comment-count"></strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         수정 / 삭제
+                    ========================== -->
+                    <div class="detail-actions">
+
+                        <button type="button" class="edit-btn" id="edit-btn">
+                            <img src="./img/travel-write/PencilLine.png" alt="">
+                            수정하기
+                        </button>
+
+
+                        <button type="button" class="delete-btn" id="delete-btn">
+                            <img src="./img/travel-write/Trash.png" alt="">
+                            삭제하기
+                        </button>
+
+
+                        <button type="button" class="more-btn" aria-label="더보기">
+                            ···
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     MAIN GRID
+                     왼쪽 : 사진 + 본문
+                     오른쪽 : 여행 정보
+                ========================== -->
+                <div class="detail-main-layout">
+
+
+                    <!-- =========================
+                         LEFT
+                    ========================== -->
+                    <div class="detail-left">
+
+
+                        <!-- =========================
+                             PHOTO GALLERY
+                        ========================== -->
+                        <section class="detail-gallery">
+
+                            <div class="gallery-layout">
+
+
+                                <!-- 메인 이미지 -->
+                                <div class="gallery-main">
+
+                                    <!-- JS에서 현재 여행기 이미지 삽입 -->
+                                    <img src="" alt="" id="main-gallery-image">
+
+
+                                    <button type="button" class="gallery-prev" id="gallery-prev" aria-label="이전 사진">
+                                        ‹
+                                    </button>
+
+
+                                    <button type="button" class="gallery-next" id="gallery-next" aria-label="다음 사진">
+                                        ›
+                                    </button>
+
+
+                                    <!-- JS에서 이미지 개수 삽입 -->
+                                    <span class="gallery-count">
+
+                                        <strong id="current-image">
+                                            1
+                                        </strong>
+
+                                        /
+
+                                        <span id="total-image">
+                                            0
+                                        </span>
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- =========================
+                                     썸네일
+                                     JS에서 자동 생성
+                                ========================== -->
+                                <div class="gallery-thumbs">
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                 TAG
+                                 JS에서 자동 생성
+                            ========================== -->
+                            <div class="detail-tags">
+                            </div>
+
+                        </section>
+
+
+                        <!-- =========================
+                             BODY
+                             JS에서 자동 생성
+                        ========================== -->
+                        <section class="detail-body">
+                        </section>
+
+
+                        <!-- =========================
+                             REACTION
+                        ========================== -->
+                        <section class="detail-reaction">
+
+
+                            <!-- 좋아요 -->
+                            <button type="button" class="reaction-like" id="reaction-like">
+
+                                <span class="heart">
+                                    <img src="/img/love.png" alt="">
+                                </span>
+
+                                <span id="like-count">
+                                    0
+                                </span>
+
+                            </button>
+
+
+                            <!-- 댓글 -->
+                            <button type="button" class="reaction-comment">
+
+                                <span>
+                                    <img src="/img/travel-write/ChatDots.png" alt="">
+                                </span>
+
+                                <span id="reaction-comment-count">
+                                    0
+                                </span>
+
+                            </button>
+
+                        </section>
+
+
+                        <!-- =========================
+                             BOTTOM NAV
+                        ========================== -->
+                        <section class="detail-navigation">
+
+
+                            <!-- 목록 -->
+                            <a href="travel-write-my.html" class="back-list-btn">
+                                <span>←</span>
+                                목록으로
+                            </a>
+
+
+                            <!-- 이전 / 다음 -->
+                            <div class="prev-next">
+
+                                <a href="#" class="prev-post">
+                                    <span>‹</span>
+                                    이전 글
+                                </a>
+
+
+                                <a href="#" class="next-post">
+                                    다음 글
+                                    <span>›</span>
+                                </a>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- =========================
+                         RIGHT : TRAVEL INFO
+                    ========================== -->
+                    <aside class="travel-information">
+
+
+                        <div class="information-title">
+
+                            <img src="./img/travel-write/MapPinLine.png" alt="">
+
+                            <h2>
+                                여행 정보
+                            </h2>
+
+                        </div>
+
+
+                        <div class="information-box">
+
+
+                            <!-- =========================
+                                 여행 기간
+                            ========================== -->
+                            <div class="information-item">
+
+                                <img src="./img/travel-write/CalendarDots.png" alt="">
+
+                                <div>
+
+                                    <span>
+                                        여행 기간
+                                    </span>
+
+                                    <!-- JS에서 삽입 -->
+                                    <strong class="info-period"></strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                 여행지
+                            ========================== -->
+                            <div class="information-item">
+
+                                <img src="./img/travel-write/MapPinLine.png" alt="">
+
+                                <div>
+
+                                    <span>
+                                        여행지
+                                    </span>
+
+                                    <!-- JS에서 삽입 -->
+                                    <strong class="info-location"></strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                 여행 유형
+                            ========================== -->
+                            <div class="information-item">
+
+                                <img src="./img/travel-write/ListMagnifyingGlass.png" alt="">
+
+                                <div>
+
+                                    <span>
+                                        여행 유형
+                                    </span>
+
+                                    <!-- JS에서 삽입 -->
+                                    <strong class="info-type"></strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                 태그
+                            ========================== -->
+                            <div class="information-item tag-information">
+
+                                <img src="./img/travel-write/Tag.png" alt="">
+
+                                <div>
+
+                                    <span>
+                                        관련 태그
+                                    </span>
+
+
+                                    <!-- JS에서 삽입 -->
+                                    <div class="information-tags">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+             기존 style.css 사용
+        ========================== -->
+        <footer id="footer">
+
+            <div class="footer-inner">
+
+                <div class="footer-logo">
+                    TRiPPi
+                </div>
+
+                <p>
+                    여행의 모든 순간을 기록하다.
+                </p>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

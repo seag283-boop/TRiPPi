@@ -1,0 +1,1158 @@
+@charset "utf-8";
+
+
+/* =========================================================
+   나의 여행기 상세 페이지
+   1920px PC 고정형
+   헤더 / 푸터 CSS 제외
+========================================================= */
+
+.travel-detail-page {
+    width: 100%;
+    min-width: 1920px;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 12% 18%,
+            rgba(255, 255, 255, 0.95) 0,
+            rgba(255, 255, 255, 0) 240px),
+        radial-gradient(circle at 88% 22%,
+            rgba(221, 244, 255, 0.85) 0,
+            rgba(221, 244, 255, 0) 300px),
+        #F5FAFD;
+
+    color: #2B4052;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   전체 CONTENT
+========================================================= */
+.travel-detail-content {
+    position: relative;
+
+    width: 1380px;
+
+    margin: 0 auto;
+
+    padding: 75px 0 80px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.detail-top {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 38px;
+
+    margin-bottom: 13px;
+}
+
+
+.detail-back {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #718797;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 25px;
+
+    letter-spacing: 0.5px;
+
+    text-decoration: none;
+}
+
+
+.detail-back span {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+}
+
+
+.detail-back:hover {
+    color: #4DAAF1;
+}
+
+
+/* =========================================================
+   토끼
+========================================================= */
+
+.detail-rabbit {
+    position: absolute;
+
+    top: 58px;
+
+    right: 400px;
+
+    width: 555px;
+    height: 255px;
+
+    object-fit: contain;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TITLE AREA
+========================================================= */
+
+.detail-header {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+
+.detail-title-area {
+    width: 1020px;
+}
+
+
+.detail-category {
+    margin: 0 0 10px;
+
+    color: #55A8DE;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+
+.detail-title-area h1 {
+    margin: 0 0 13px;
+
+    color: #243B4D;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 46px;
+
+    font-weight: 500;
+
+    line-height: 1.28;
+
+    letter-spacing: 1px;
+}
+
+
+.detail-subtitle {
+    margin: 0;
+
+    color: #718797;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 22px;
+    letter-spacing: 1px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   작성 정보
+========================================================= */
+
+.detail-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 19px;
+
+    color: #98A8B4;
+
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 13px;
+}
+
+
+.detail-author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.author-image {
+    width: 32px;
+    height: 32px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #E8F5FC;
+}
+
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.detail-author strong {
+    color: #536B7B;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+}
+
+
+.meta-divider {
+    width: 1px;
+    height: 12px;
+
+    background: #D7E3EA;
+}
+
+
+/* =========================================================
+   수정 / 삭제
+========================================================= */
+
+.detail-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding-top: 38px;
+    margin-top: 170px;
+    margin-right: 170px;
+}
+
+
+.edit-btn,
+.delete-btn,
+.more-btn {
+    height: 40px;
+
+    border: 1px solid #DDE9F0;
+
+    background: #FFFFFF;
+
+    color: #738898;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+.edit-btn,
+.delete-btn {
+    min-width: 104px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 15px;
+
+    border-radius: 20px;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 20px;
+}
+
+
+.edit-btn img,
+.delete-btn img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+}
+
+
+.more-btn {
+    width: 40px;
+
+    border-radius: 50%;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+}
+
+
+.edit-btn:hover,
+.delete-btn:hover,
+.more-btn:hover {
+    border-color: #8BCBF3;
+
+    color: #4CA8E8;
+
+    background: #F5FBFF;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.detail-main-layout {
+    width: 1380px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 900px 390px;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+.detail-left {
+    width: 900px;
+}
+
+
+/* =========================================================
+   PHOTO GALLERY
+========================================================= */
+
+.detail-gallery {
+    width: 100%;
+
+    margin-bottom: 34px;
+}
+
+
+.gallery-layout {
+    width: 100%;
+
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   메인 이미지
+========================================================= */
+
+.gallery-main {
+    position: relative;
+
+    width: 770px;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #DCECF5;
+
+    box-shadow:
+        0 10px 30px rgba(74, 137, 173, 0.10);
+}
+
+
+.gallery-main>img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   갤러리 좌우 버튼
+========================================================= */
+
+.gallery-prev,
+.gallery-next {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 46px;
+    height: 46px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #536C7E;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 31px;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    box-shadow: 0 4px 12px rgba(40, 80, 105, 0.10);
+}
+
+
+.gallery-prev {
+    left: 20px;
+}
+
+
+.gallery-next {
+    right: 20px;
+}
+
+
+.gallery-prev:hover,
+.gallery-next:hover {
+    background: #FFFFFF;
+
+    color: #3E9FE4;
+}
+
+
+/* =========================================================
+   사진 번호
+========================================================= */
+
+.gallery-count {
+    position: absolute;
+
+    right: 18px;
+    top: 18px;
+
+    min-width: 58px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 3px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+
+    background: rgba(30, 54, 69, 0.58);
+
+    color: #FFFFFF;
+
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 13px;
+}
+
+
+.gallery-count strong {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   세로 썸네일
+========================================================= */
+.gallery-thumbs {
+    width: 118px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+
+    overflow: hidden;
+}
+
+.gallery-thumb {
+    width: 118px;
+    height: 64px;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+.gallery-thumb img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.gallery-thumb.active {
+    border-color: #55AEF5;
+
+    box-shadow:
+        0 0 0 1px rgba(85, 174, 245, 0.18);
+}
+
+
+.gallery-thumb:hover {
+    border-color: #9DD6F7;
+}
+
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.detail-tags {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+
+.detail-tags span {
+    min-height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+
+    background: #E9F6FD;
+
+    color: #5796BB;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   본문
+========================================================= */
+
+.detail-body {
+    width: 850px;
+
+    margin: 0 0 54px;
+}
+
+
+.detail-body h2 {
+    margin: 0 0 20px;
+
+    color: #2D4354;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+.detail-body p {
+    margin: 0 0 18px;
+
+    color: #5E7382;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 22px;
+
+    line-height: 1.85;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   본문 이미지
+========================================================= */
+
+.body-image {
+    width: 850px;
+
+    margin: 28px 0 30px;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+}
+
+
+.body-image img {
+    width: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   RIGHT : TRAVEL INFORMATION
+========================================================= */
+
+.travel-information {
+    position: sticky;
+
+    top: 25px;
+
+    width: 390px;
+
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E0EBF1;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    box-shadow:
+        0 8px 25px rgba(74, 137, 173, 0.08);
+}
+
+
+/* =========================================================
+   정보 제목
+========================================================= */
+
+.information-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 17px;
+}
+
+
+.information-title img {
+    width: 25px;
+    height: 25px;
+
+    object-fit: contain;
+}
+
+
+.information-title h2 {
+    margin: 0;
+
+    color: #2D4354;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 26px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   정보 박스
+========================================================= */
+
+.information-box {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 17px;
+
+    background: #F4FAFD;
+}
+
+
+.information-item {
+    min-height: 104px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 21px 20px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #E2EEF4;
+
+    background: #FFFFFF;
+}
+
+
+.information-item:last-child {
+    border-bottom: 0;
+}
+
+
+.information-item>img {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    object-fit: contain;
+}
+
+
+.information-item>div {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.information-item span {
+    color: #9AAAB6;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+
+.information-item strong {
+    color: #40596B;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 22px;
+    letter-spacing: 1pxx;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   정보 태그
+========================================================= */
+
+.tag-information {
+    align-items: flex-start;
+
+    min-height: 145px;
+}
+
+
+.tag-information>img {
+    margin-top: 3px;
+}
+
+
+.information-tags {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+
+.information-tags em {
+    padding: 5px 10px;
+
+    border-radius: 14px;
+
+    background: #EEF8FD;
+
+    color: #5797BB;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 20px;
+
+    font-style: normal;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   REACTION
+========================================================= */
+
+.detail-reaction {
+    width: 850px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 24px 0;
+
+    border-top: 1px solid #E1EBF1;
+
+    border-bottom: 1px solid #E1EBF1;
+}
+
+
+/* =========================================================
+   Reaction 공통
+========================================================= */
+
+.reaction-like,
+.reaction-comment,
+.bookmark-btn {
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: 1px solid #DDE9F0;
+
+    border-radius: 24px;
+
+    background: #FFFFFF;
+
+    color: #6C8291;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+/* 좋아요 */
+
+.reaction-like {
+    min-width: 105px;
+
+    padding: 0 20px;
+
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 14px;
+}
+
+
+.reaction-like .heart {
+    color: #8DA2B0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 23px;
+}
+
+
+.reaction-like.active {
+    border-color: #FFB7C4;
+
+    color: #EC748A;
+
+    background: #FFF6F8;
+}
+
+
+.reaction-like.active .heart {
+    color: #EC748A;
+}
+
+
+/* 댓글 */
+
+.reaction-comment {
+    min-width: 85px;
+
+    padding: 0 18px;
+
+    font-family: 'Pretendard', sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* 북마크 */
+
+.bookmark-btn {
+    width: 46px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   하단 네비게이션
+========================================================= */
+
+.detail-navigation {
+    width: 850px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 26px;
+}
+
+
+/* 목록 */
+
+.back-list-btn {
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 22px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #DCE8EF;
+
+    border-radius: 23px;
+
+    background: #FFFFFF;
+
+    color: #607888;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 20px;
+
+    text-decoration: none;
+}
+
+
+.back-list-btn span {
+    font-family: Arial, sans-serif;
+
+    font-size: 23px;
+}
+
+
+.back-list-btn:hover {
+    color: #439FE3;
+
+    border-color: #9BD3F4;
+}
+
+
+/* =========================================================
+   이전 / 다음
+========================================================= */
+
+.prev-next {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.prev-post,
+.next-post {
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #DCE8EF;
+
+    border-radius: 23px;
+
+    background: #FFFFFF;
+
+    color: #607888;
+
+    font-family: 'OngleipEoyeonce', sans-serif;
+
+    font-size: 23px;
+
+    text-decoration: none;
+}
+
+
+.prev-post span,
+.next-post span {
+    font-family: Arial, sans-serif;
+    margin-top: -5px;
+    font-size: 23px;
+}
+
+
+.prev-post:hover,
+.next-post:hover {
+    color: #439FE3;
+
+    border-color: #9BD3F4;
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.edit-btn:focus,
+.delete-btn:focus,
+.more-btn:focus,
+.gallery-prev:focus,
+.gallery-next:focus,
+.gallery-thumb:focus,
+.reaction-like:focus,
+.reaction-comment:focus,
+.bookmark-btn:focus {
+    outline: none;
+}
+
+
+/* =========================================================
+   선택 효과
+========================================================= */
+
+.edit-btn,
+.delete-btn,
+.more-btn,
+.gallery-prev,
+.gallery-next,
+.gallery-thumb,
+.reaction-like,
+.reaction-comment,
+.bookmark-btn,
+.back-list-btn,
+.prev-post,
+.next-post {
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.edit-btn:active,
+.delete-btn:active,
+.gallery-prev:active,
+.gallery-next:active,
+.reaction-like:active,
+.reaction-comment:active,
+.bookmark-btn:active {
+    transform: scale(0.97);
+}

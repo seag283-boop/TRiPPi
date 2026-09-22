@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>나의 여행기 | TRiPPi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/travel-my.css">
+
+    <!-- JS -->
+    <script src="./js/travel-my.js" defer></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+        <header id="header">
+
+            <div class="header-inner">
+
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./img/LOGO.png" alt="TRiPPi">
+                    </a>
+                </h1>
+
+
+                <nav class="gnb">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">홈</a>
+                        </li>
+
+                        <li>
+                            <a href="travel.html">여행지 찾기</a>
+                        </li>
+
+                        <li>
+                            <a href="travel-test.html">취향테스트</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="travel-record.html">여행기록</a>
+                        </li>
+
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <div class="header-util">
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/search.png" alt="검색">
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/favorite.png" alt="찜">
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/mypage.png" alt="마이페이지">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- //header -->
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+        <main class="my-travel-page">
+
+
+            <!-- =========================
+                 HERO
+            ========================== -->
+            <section class="my-travel-hero">
+
+                <div class="my-travel-hero-text">
+
+                    <p class="hero-small">
+                        내가 담은 특별한 여행의 순간들
+                    </p>
+
+                    <h1>
+                        나의 여행기
+                    </h1>
+
+                    <p class="hero-description">
+                        여행의 순간을 기록하고<br>
+                        소중한 추억을 다시 만나보세요.
+                    </p>
+
+                </div>
+
+
+                <!-- 기존 여행토끼 캐릭터 -->
+                <img src="./img/travel-write/상단 토끼.png" alt="여행토끼" class="travel-rabbit">
+
+            </section>
+
+
+            <!-- =========================
+                 CONTENT
+            ========================== -->
+            <section class="my-travel-content">
+
+
+                <!-- =========================
+                     TAB
+                ========================== -->
+                <div class="my-travel-tabs">
+
+                    <button type="button" class="my-tab active">
+                        나의 여행기
+                    </button>
+
+                    <button type="button" class="my-tab">
+                        좋아요한 여행기
+                    </button>
+
+                    <button type="button" class="my-tab">
+                        저장한 여행기
+                    </button>
+
+                    <button type="button" class="my-tab">
+                        임시저장
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     TOP
+                ========================== -->
+                <div class="my-travel-top">
+
+                    <div class="travel-count">
+                        <strong>총 8개</strong>
+                        의 여행기가 있습니다.
+                    </div>
+
+
+                    <select class="travel-sort" id="travel-sort">
+
+                        <option value="latest">
+                            최신순
+                        </option>
+
+                        <option value="oldest">
+                            오래된순
+                        </option>
+
+                        <option value="like">
+                            좋아요순
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- =========================
+                     CARD LIST
+                ========================== -->
+                <div class="my-travel-list" id="my-travel-list">
+
+
+                    <!-- =========================
+                         CARD 01 : 제주
+                    ========================== -->
+                    <article class="my-travel-card">
+
+                        <div class="card-image">
+
+                            <img src="./img/travle/제주.png" alt="제주도 여행">
+
+                            <span class="place-badge">
+                                제주도
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h2>
+                                푸른 바다와 함께한 제주도 3박 4일 여행
+                            </h2>
+
+
+                            <p class="card-description">
+                                바람도, 바다도, 모든 것이 완벽했던
+                                제주에서의 힐링 여행
+                            </p>
+
+
+                            <div class="card-date">
+                                2024. 05. 17 ~ 2024. 05. 20
+                            </div>
+
+
+                            <div class="card-bottom">
+
+                                <div class="card-reaction">
+
+                                    <span>
+                                        ♡ 128
+                                    </span>
+
+                                    <span>
+                                        ♡ 32
+                                    </span>
+
+                                </div>
+
+
+                                <!-- 제주 -->
+                                <a href="travel-my-detail.html?place=jeju" class="detail-btn">
+                                    자세히 보기
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 02 : 부산
+                    ========================== -->
+                    <article class="my-travel-card">
+
+                        <div class="card-image">
+
+                            <img src="./img/travle/부산.png" alt="부산 여행">
+
+                            <span class="place-badge">
+                                부산
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h2>
+                                바다와 맛있는 음식이 가득했던 부산
+                            </h2>
+
+
+                            <p class="card-description">
+                                친구들과 함께 떠난 부산 먹방 여행
+                            </p>
+
+
+                            <div class="card-date">
+                                2024. 04. 03 ~ 2024. 04. 05
+                            </div>
+
+
+                            <div class="card-bottom">
+
+                                <div class="card-reaction">
+
+                                    <span>
+                                        ♡ 96
+                                    </span>
+
+                                    <span>
+                                        ♡ 18
+                                    </span>
+
+                                </div>
+
+
+                                <!-- 부산 -->
+                                <a href="travel-my-detail.html?place=busan" class="detail-btn">
+                                    자세히 보기
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 03 : 강릉
+                    ========================== -->
+                    <article class="my-travel-card">
+
+                        <div class="card-image">
+
+                            <img src="./img/travle/강릉.jpg" alt="강릉 여행">
+
+                            <span class="place-badge">
+                                강릉
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h2>
+                                혼자 떠난 강릉 바다 여행
+                            </h2>
+
+
+                            <p class="card-description">
+                                아무 계획 없이 떠나 더 좋았던 하루
+                            </p>
+
+
+                            <div class="card-date">
+                                2024. 03. 15 ~ 2024. 03. 17
+                            </div>
+
+
+                            <div class="card-bottom">
+
+                                <div class="card-reaction">
+
+                                    <span>
+                                        ♡ 74
+                                    </span>
+
+                                    <span>
+                                        ♡ 21
+                                    </span>
+
+                                </div>
+
+
+                                <!-- 강릉 -->
+                                <a href="travel-my-detail.html?place=gangneung" class="detail-btn">
+                                    자세히 보기
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 04 : 서울
+                    ========================== -->
+                    <article class="my-travel-card">
+
+                        <div class="card-image">
+
+                            <img src="./img/travle/서울.jpg" alt="서울 여행">
+
+                            <span class="place-badge">
+                                서울
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h2>
+                                일상 속에서 발견한 서울의 새로운 모습
+                            </h2>
+
+
+                            <p class="card-description">
+                                익숙한 서울을 여행자의 시선으로 바라보기
+                            </p>
+
+
+                            <div class="card-date">
+                                2024. 02. 10
+                            </div>
+
+
+                            <div class="card-bottom">
+
+                                <div class="card-reaction">
+
+                                    <span>
+                                        ♡ 61
+                                    </span>
+
+                                    <span>
+                                        ♡ 12
+                                    </span>
+
+                                </div>
+
+
+                                <!-- 서울 -->
+                                <a href="travel-my-detail.html?place=seoul" class="detail-btn">
+                                    자세히 보기
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 05 : 전주
+                    ========================== -->
+                    <article class="my-travel-card">
+
+                        <div class="card-image">
+
+                            <img src="./img/travle/전주.jpg" alt="전주 여행">
+
+                            <span class="place-badge">
+                                전주
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h2>
+                                한옥마을에서 보낸 느린 하루
+                            </h2>
+
+
+                            <p class="card-description">
+                                맛있는 음식과 한옥 풍경을 즐긴 여행
+                            </p>
+
+
+                            <div class="card-date">
+                                2024. 01. 21 ~ 2024. 01. 22
+                            </div>
+
+
+                            <div class="card-bottom">
+
+                                <div class="card-reaction">
+
+                                    <span>
+                                        ♡ 53
+                                    </span>
+
+                                    <span>
+                                        ♡ 10
+                                    </span>
+
+                                </div>
+
+
+                                <!-- 전주 -->
+                                <a href="travel-my-detail.html?place=jeonju" class="detail-btn">
+                                    자세히 보기
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         CARD 06 : 여수
+                    ========================== -->
+                    <article class="my-travel-card">
+
+                        <div class="card-image">
+
+                            <img src="./img/travle/여수.jpg" alt="여수 여행">
+
+                            <span class="place-badge">
+                                여수
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-content">
+
+                            <h2>
+                                노을이 예뻤던 여수 여행
+                            </h2>
+
+
+                            <p class="card-description">
+                                바다와 노을을 마음껏 즐긴 여유로운 여행
+                            </p>
+
+
+                            <div class="card-date">
+                                2023. 12. 12 ~ 2023. 12. 14
+                            </div>
+
+
+                            <div class="card-bottom">
+
+                                <div class="card-reaction">
+
+                                    <span>
+                                        ♡ 48
+                                    </span>
+
+                                    <span>
+                                        ♡ 9
+                                    </span>
+
+                                </div>
+
+
+                                <!-- 여수 -->
+                                <a href="travel-my-detail.html?place=yeosu" class="detail-btn">
+                                    자세히 보기
+                                    <span>→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- =========================
+                     PAGINATION
+                ========================== -->
+                <div class="pagination">
+
+                    <button type="button">
+                        ‹
+                    </button>
+
+                    <button type="button" class="active">
+                        1
+                    </button>
+
+                    <button type="button">
+                        2
+                    </button>
+
+                    <button type="button">
+                        3
+                    </button>
+
+                    <button type="button">
+                        ›
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer id="footer">
+
+            <div class="footer-inner">
+
+                <div class="footer-logo">
+                    TRiPPi
+                </div>
+
+                <p>
+                    여행의 모든 순간을 기록하다.
+                </p>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

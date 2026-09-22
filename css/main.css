@@ -254,7 +254,7 @@ body {
     z-index: 2;
 }
 
-.section-title > div {
+.section-title>div {
     flex-shrink: 0;
 }
 
@@ -351,7 +351,7 @@ body {
     overflow: hidden;
 }
 
-.card-image > img {
+.card-image>img {
     display: block;
 
     width: 100%;
@@ -427,7 +427,6 @@ body {
     transform: rotate(-5deg);
 }
 
-
 /* ========================================
    LIKE BUTTON
 ======================================== */
@@ -447,18 +446,56 @@ body {
     align-items: center;
     justify-content: center;
 
+    border: none;
     border-radius: 50%;
 
     background: #D9D9D9;
 
+    cursor: pointer;
+
     z-index: 5;
+
+    transition: all 0.2s ease;
 }
+
 
 .like-btn img {
     width: 17px;
     height: 17px;
 
     object-fit: contain;
+
+    transition: all 0.2s ease;
+}
+
+
+/* 마우스를 올렸을 때 */
+
+.like-btn:hover {
+    background: #F4C6CF;
+
+    transform: scale(1.05);
+}
+
+
+/* 찜했을 때 */
+
+.like-btn.active {
+    background: #F08FA2;
+}
+
+
+/* 찜했을 때 하트 */
+
+.like-btn.active img {
+    filter: brightness(0) invert(1);
+}
+
+
+/* 클릭할 때 */
+
+.like-btn:active {
+    transform: scale(0.92);
 }
 
 

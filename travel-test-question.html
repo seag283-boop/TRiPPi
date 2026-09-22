@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TRiPPi | 여행 취향 테스트</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/travel-test-question.css">
+
+    <script src="./js/travel-test-question.js" defer></script>
+</head>
+
+
+<body>
+
+    <div id="wrap">
+
+
+        <!-- ==================================================
+             HEADER
+        ================================================== -->
+
+        <header id="header">
+
+            <div class="header-inner">
+
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./img/LOGO.png" alt="TRiPPi">
+                    </a>
+                </h1>
+
+
+                <nav class="gnb">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">
+                                홈
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="travel.html">
+                                여행지 찾기
+                            </a>
+                        </li>
+
+                        <li class="active">
+                            <a href="travel-test.html">
+                                취향테스트
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="travel-record.html">
+                                여행기록
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                마이페이지
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+
+                <div class="header-util">
+
+                    <button type="button">
+                        <img src="./img/icon/search.png" alt="검색">
+                    </button>
+
+                    <button type="button">
+                        <img src="./img/icon/favorite.png" alt="찜">
+                    </button>
+
+                    <button type="button">
+                        <img src="./img/icon/mypage.png" alt="마이페이지">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             TEST
+        ================================================== -->
+
+        <main class="test-page">
+
+
+            <!-- PROGRESS -->
+
+            <section class="test-progress">
+
+                <div class="test-progress-top">
+
+                    <span class="test-progress-title">
+                        TRiPPi TASTE TEST
+                    </span>
+
+                    <span class="test-progress-number">
+                        <strong id="current-number">1</strong>
+                        <span>/</span>
+                        <span>10</span>
+                    </span>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <span class="progress-current" id="progress-current"></span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- QUESTION -->
+
+            <section class="test-question">
+
+                <p class="question-number" id="question-number">
+                    QUESTION 01
+                </p>
+
+
+                <h2 class="question-title" id="question-title">
+                    여행을 떠난다면<br>
+                    어떤 여행을 하고 싶나요?
+                </h2>
+
+
+                <p class="question-subtitle" id="question-subtitle">
+                    가장 마음에 드는 하나를 선택해주세요.
+                </p>
+
+            </section>
+
+
+
+            <!-- OPTIONS -->
+
+            <section class="test-options">
+
+                <div class="option-grid" id="option-grid">
+
+
+                    <button type="button" class="test-option" data-type="healing">
+
+                        <span class="option-number">
+                            01
+                        </span>
+
+                        <span class="option-title">
+                            느긋하게 쉬는 여행
+                        </span>
+
+                        <span class="option-description">
+                            조용한 곳에서 여유롭게<br>
+                            나만의 시간을 보내고 싶어요.
+                        </span>
+
+                        <span class="option-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+
+                    <button type="button" class="test-option" data-type="food">
+
+                        <span class="option-number">
+                            02
+                        </span>
+
+                        <span class="option-title">
+                            맛있는 여행
+                        </span>
+
+                        <span class="option-description">
+                            맛집과 카페를 찾아다니며<br>
+                            새로운 음식을 맛보고 싶어요.
+                        </span>
+
+                        <span class="option-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+
+                    <button type="button" class="test-option" data-type="city">
+
+                        <span class="option-number">
+                            03
+                        </span>
+
+                        <span class="option-title">
+                            도시를 탐험하는 여행
+                        </span>
+
+                        <span class="option-description">
+                            새로운 도시의 거리와<br>
+                            핫플레이스를 돌아다니고 싶어요.
+                        </span>
+
+                        <span class="option-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+
+                    <button type="button" class="test-option" data-type="nature">
+
+                        <span class="option-number">
+                            04
+                        </span>
+
+                        <span class="option-title">
+                            자연을 만나는 여행
+                        </span>
+
+                        <span class="option-description">
+                            바다와 산, 숲처럼<br>
+                            아름다운 자연을 보고 싶어요.
+                        </span>
+
+                        <span class="option-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+
+                    <button type="button" class="test-option" data-type="culture">
+
+                        <span class="option-number">
+                            05
+                        </span>
+
+                        <span class="option-title">
+                            문화를 경험하는 여행
+                        </span>
+
+                        <span class="option-description">
+                            그 지역의 역사와 문화,<br>
+                            전통을 직접 경험하고 싶어요.
+                        </span>
+
+                        <span class="option-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+
+                    <button type="button" class="test-option" data-type="activity">
+
+                        <span class="option-number">
+                            06
+                        </span>
+
+                        <span class="option-title">
+                            활동적인 여행
+                        </span>
+
+                        <span class="option-description">
+                            새로운 체험과 액티비티를<br>
+                            마음껏 즐기고 싶어요.
+                        </span>
+
+                        <span class="option-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- NAVIGATION -->
+
+            <section class="test-navigation">
+
+                <button type="button" class="prev-button" id="prev-button">
+                    ← 이전
+                </button>
+
+
+                <button type="button" class="next-button" id="next-button">
+
+                    <span id="next-text">
+                        다음 질문
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>

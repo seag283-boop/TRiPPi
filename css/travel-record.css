@@ -9,7 +9,7 @@
 
 /* hero */
 .record-hero {
-    width: 1565px;
+    width: 1820px;
     height: 315px;
     margin-left: 43px;
     overflow: hidden;
@@ -35,8 +35,8 @@
 
 .record-hero-text {
     position: absolute;
-    left: 240px;
-    top: 34px;
+    left: 340px;
+    top: 50px;
 
     z-index: 2;
     color: #34475B;
@@ -45,10 +45,10 @@
 .record-hero-text p {
     margin: 0;
     font-family: 'OngleipEoyeonce';
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 500;
 
-    line-height: 1.28;
+    line-height: 1;
     letter-spacing: 1px;
 }
 
@@ -73,7 +73,7 @@
 
 .record-content {
     width: 1490px;
-    margin-left: 78px;
+    margin: 0 auto;
     padding-top: 12px;
     padding-bottom: 28px;
 }
@@ -121,30 +121,452 @@
 .record-write-btn {
     width: 227px;
     height: 50px;
+
     padding: 0;
+
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
     gap: 8px;
+
+    box-sizing: border-box;
+
     border: 0;
     border-radius: 28px;
 
     background: #64BCFD;
     color: #fff;
+
     font-family: 'OngleipEoyeonce';
     font-size: 25px;
+    letter-spacing: 2px;
 
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .record-write-btn img {
     width: 20px;
     height: 20px;
+
+    display: block;
+    flex-shrink: 0;
+
     object-fit: contain;
 }
 
+.record-write-btn span {
+    display: inline-flex;
+    align-items: center;
+
+    white-space: nowrap;
+}
+
 .record-write-btn .arrow {
-    font-family: 'OngleipEoyeonce';
     font-size: 21px;
+    margin-top: -3px;
+}
+
+.record-section-title {
+    width: 1295px;
+    margin-left: 99px;
+    margin-bottom: 16px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.record-title-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.record-title-left>img {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+}
+
+.record-title-left h2 {
+    margin: 0 0 2px;
+    font-family: 'OngleipEoyeonce';
+    font-size: 40px;
+    font-weight: 500;
+
+    color: #34475B;
+}
+
+.record-title-left p {
+    margin: 0;
+    font-family: 'OngleipEoyeonce';
+    font-size: 28px;
+
+    margin-top: -20px;
+    color: #34475B;
+}
+
+.record-more {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 3px;
+    text-decoration: none;
+    font-family: 'OngleipEoyeonce';
+    font-size: 30px;
+    color: #66bdfe;
+}
+
+.record-more span {
+    font-family: 'OngleipEoyeonce';
+    font-size: 40px;
+}
+
+/* card list */
+
+.record-card-list {
+    width: 1295px;
+    margin-left: 99px;
+    display: grid;
+    grid-template-columns: repeat(4, 313px);
+    column-gap: 17px;
+    row-gap: 20px;
+}
+
+/* card */
+
+.record-card {
+    width: 313px;
+    height: 293px;
+    background: #EAF5FD;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(51, 76, 96, 0.14);
+}
+
+.record-card-image {
+    position: relative;
+    width: 313px;
+    height: 156px;
+    overflow: hidden;
+}
+
+.record-card-image>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.record-bookmark {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: #ffffffeb;
+}
+
+.record-bookmark {
+    position: absolute;
+
+    top: 11px;
+    right: 12px;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #ffffffeb;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: all 0.2s ease;
+}
+
+
+.record-bookmark img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+
+    transition: all 0.2s ease;
+}
+
+
+/* 마우스를 올렸을 때 */
+
+.record-bookmark:hover {
+    background: #F4C6CF;
+
+    transform: scale(1.05);
+}
+
+
+/* 찜했을 때 */
+
+.record-bookmark.active {
+    background: #F08FA2;
+}
+
+
+/* 찜했을 때 하트 */
+
+.record-bookmark.active img {
+    filter: brightness(0) invert(1);
+}
+
+
+/* 클릭할 때 */
+
+.record-bookmark:active {
+    transform: scale(0.92);
+}
+
+.record-bookmark img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+.record-card-info {
+    width: 100%;
+    height: 137px;
+
+    box-sizing: border-box;
+
+    padding: 10px 17px 11px;
+}
+
+.record-card-info h3 {
+    margin: 0;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+
+
+
+    color: #34475B;
+}
+
+.record-card-description {
+    width: 100%;
+    height: 40px;
+
+    margin: 0;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 20px;
+
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #A3ADBD;
+}
+
+.record-card-bottom {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.record-user {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.record-user-image {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #eeee;
+    margin-top: -5px;
+}
+
+.record-user-image>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.record-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.record-user-info strong {
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #34475B;
+}
+
+.record-user-info span {
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 25px;
+    color: #63798d;
+    letter-spacing: 2px;
+    margin-top: -20px;
+}
+
+.record-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.record-card-actions button {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    border: 0;
+
+    background: transparent;
+    margin-top: -50px;
+
+    cursor: pointer;
+}
+
+.record-like {
+    gap: 4px;
+}
+
+.record-like img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+.record-like span {
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 25px;
+
+    color: #40546a;
+}
+
+.record-save img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   BOTTOM BANNER
+   ========================================================= */
+
+.record-bottom-banner {
+    position: relative;
+
+    width: 1490px;
+    height: 114px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: #dff3ff;
+}
+
+.record-bottom-plane {
+    position: absolute;
+
+    left: 15px;
+    bottom: 4px;
+
+    width: 190px;
+}
+
+.record-bottom-plane img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   BOTTOM RABBIT
+   ========================================================= */
+
+.record-bottom-rabbit {
+    position: absolute;
+
+    left: 390px;
+    bottom: -0px;
+
+    width: 410px;
+    z-index: 999;
+}
+
+.record-bottom-rabbit img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   BOTTOM TEXT
+   ========================================================= */
+
+.record-bottom-text {
+    position: absolute;
+
+    left: 850px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.record-bottom-text p {
+    margin: 0;
+
+    font-family: "OngleipEoyeonce", sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+
+
+    color: #63798d;
+}
+
+.record-bottom-text p:first-child {
+    font-size: 26px;
 }

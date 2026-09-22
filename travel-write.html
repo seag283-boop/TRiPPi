@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TRiPPi - 여행기 작성</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/travel-write.css">
+
+    <script src="./js/travel-write.js" defer></script>
+</head>
+
+
+<body>
+    <div id="wrap"> <!-- header -->
+        <header id="header">
+            <div class="header-inner">
+                <h1 class="logo">
+                    <a href="index.html"><img src="./img/LOGO.png" alt="LOGO" /></a>
+                </h1>
+
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="index.html">홈</a>
+                        </li>
+                        <li>
+                            <a href="travel.html">여행지 찾기</a>
+                        </li>
+                        <li>
+                            <a href="travel-test.html">취향테스트</a>
+                        </li>
+                        <li class="active">
+                            <a href="travel-record.html">여행기록</a>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-util">
+                    <button type="button" class="search">
+                        <img src="./img/icon/search.png" alt="검색" />
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/favorite.png" alt="찜" />
+                    </button>
+
+                    <button type="button" class="search">
+                        <img src="./img/icon/mypage.png" alt="마이페이지" />
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <main class="travel-write-page">
+
+
+            <!-- ========================================
+             HERO
+        ========================================= -->
+
+            <section class="write-hero">
+
+                <div class="write-hero-inner">
+
+                    <img src="./img/travel-write/travle 상단.png" alt="" class="write-hero-bg">
+
+                    <div class="write-hero-text">
+
+                        <h1>
+                            여행의 순간을<br>
+                            기록해보세요 !
+                        </h1>
+
+                        <p>
+                            당신의 특별한 여행 이야기가<br>
+                            누군가에게는 새로운 여행이 될 거예요.
+                        </p>
+
+                    </div>
+
+
+                    <img src="./img/travel-write/상단 토끼.png" alt="여행 기록 토끼" class="write-hero-rabbit">
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================================
+             WRITE CONTENT
+        ========================================= -->
+
+            <section class="write-content">
+
+
+                <!-- ====================================
+                 LEFT : TRAVEL INFORMATION
+            ==================================== -->
+
+                <div class="write-form">
+
+
+                    <!-- 제목 -->
+
+                    <div class="write-form-title">
+
+                        <img src="./img/travel-write/PencilLine.png" alt="">
+
+                        <div>
+
+                            <h2>
+                                여행기 작성하기
+                            </h2>
+
+                            <p>
+                                당신의 소중한 여행 이야기를 들려주세요 !
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 제목 -->
+
+                    <div class="form-field">
+
+                        <label for="travel-title">
+                            제목
+                            <span>*</span>
+                        </label>
+
+                        <input type="text" id="travel-title" name="travel-title" placeholder="여행기의 제목을 입력해 주세요.">
+
+                    </div>
+
+
+
+                    <!-- 여행지 -->
+
+                    <div class="form-field">
+
+                        <label for="travel-place">
+                            여행지
+                            <span>*</span>
+                        </label>
+
+                        <div class="input-icon">
+
+                            <img src="./img/travel-write/MapPinLine.png" alt="">
+
+                            <input type="text" id="travel-place" name="travel-place" placeholder="어느 곳을 다녀오셨나요?">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 여행 기간 + 여행 유형 -->
+
+                    <div class="form-row">
+
+
+                        <!-- 여행 기간 -->
+
+                        <div class="form-field">
+
+                            <label for="travel-date">
+                                여행 기간
+                                <span>*</span>
+                            </label>
+
+                            <div class="date-input" id="travel-date-box">
+
+                                <img src="./img/travel-write/CalendarDots.png" alt="">
+
+                                <input type="text" id="travel-date" name="travel-date" placeholder="여행 기간을 선택해 주세요."
+                                    readonly>
+
+                            </div>
+
+                            <!-- 여행 기간 선택 캘린더 -->
+                            <div class="range-calendar" id="range-calendar">
+
+                                <div class="calendar-header">
+
+                                    <button type="button" class="calendar-prev">
+                                        ‹
+                                    </button>
+
+                                    <strong class="calendar-title"></strong>
+
+                                    <button type="button" class="calendar-next">
+                                        ›
+                                    </button>
+
+                                </div>
+
+                                <div class="calendar-week">
+
+                                    <span>일</span>
+                                    <span>월</span>
+                                    <span>화</span>
+                                    <span>수</span>
+                                    <span>목</span>
+                                    <span>금</span>
+                                    <span>토</span>
+
+                                </div>
+
+                                <div class="calendar-days"></div>
+
+                            </div>
+
+                            <!-- 실제 시작일 / 종료일 저장 -->
+                            <input type="hidden" id="travel-start" name="travel-start">
+
+                            <input type="hidden" id="travel-end" name="travel-end">
+
+                        </div>
+
+
+
+                        <!-- 여행 유형 -->
+
+                        <div class="form-field">
+
+                            <label for="travel-type">
+                                여행 유형
+                            </label>
+
+                            <div class="select-input">
+
+                                <select id="travel-type">
+
+                                    <option value="">
+                                        여행 유형을 선택해 주세요.
+                                    </option>
+
+                                    <option value="healing">
+                                        힐링 여행
+                                    </option>
+
+                                    <option value="food">
+                                        맛집 여행
+                                    </option>
+
+                                    <option value="city">
+                                        도시 여행
+                                    </option>
+
+                                    <option value="nature">
+                                        자연 여행
+                                    </option>
+
+                                    <option value="culture">
+                                        문화 여행
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 여행 이야기 -->
+
+                    <div class="form-field story-field">
+
+                        <label for="travel-story">
+                            여행 이야기
+                            <span>*</span>
+                        </label>
+
+                        <textarea id="travel-story" name="travel-story"
+                            placeholder="여행 중 있었던 특별한 순간, 느낀 점, 추천하고 싶은 것들을 자유롭게 적어주세요.&#10;당신의 이야기가 누군가에게는 새로운 여행의 시작이 될 거예요 !"></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ====================================
+                 RIGHT : PHOTO / TAG / PRIVACY
+            ==================================== -->
+
+                <div class="write-side">
+
+
+                    <!-- 사진 첨부 -->
+
+                    <div class="write-side-section photo-section">
+
+                        <div class="side-title">
+
+                            <img src="./img/travel-write/Image.png" alt="">
+
+                            <h3>
+                                사진 첨부
+                            </h3>
+
+                            <span>
+                                여행 사진을 첨부해 주세요. (최대 10장)
+                            </span>
+
+                        </div>
+
+
+                        <!-- 사진 업로드 -->
+
+                        <label for="travel-images" class="photo-upload">
+
+                            <img src="./img/travel-write/Image.png" alt="">
+
+                            <strong>
+                                클릭하여 사진을 업로드하거나
+                            </strong>
+
+                            <p>
+                                여기로 드래그해 주세요.
+                            </p>
+
+                        </label>
+
+                        <input type="file" id="travel-images" name="travel-images" accept="image/*" multiple>
+
+
+                        <!-- 사진 미리보기 -->
+
+                        <div class="photo-preview">
+
+                            <div class="preview-item">
+
+                                <img src="./img/main 제주.png" alt="">
+
+                            </div>
+
+                            <div class="preview-item empty">
+                                <span>+</span>
+                            </div>
+
+                            <div class="preview-item empty">
+                                <span>+</span>
+                            </div>
+
+                            <div class="preview-item empty">
+                                <span>+</span>
+                            </div>
+
+                            <div class="preview-item empty">
+                                <span>+</span>
+                            </div>
+
+                            <div class="preview-item empty">
+                                <span>+</span>
+                            </div>
+
+                            <div class="preview-item empty">
+                                <span>+</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ====================================
+                     TAG
+                ==================================== -->
+
+                    <div class="write-side-section tag-section">
+
+                        <div class="side-title">
+
+                            <img src="./img/travel-write/Tag.png" alt="">
+
+                            <h3>
+                                태그 추가
+                            </h3>
+
+                        </div>
+
+
+                        <div class="tag-input">
+
+                            <input type="text" id="travel-tag" placeholder="태그를 입력하고 Enter를 눌러 추가해 주세요.">
+
+                        </div>
+
+
+                        <div class="tag-list">
+
+                            <button type="button">
+                                #바다
+                            </button>
+
+                            <button type="button">
+                                #맛집
+                            </button>
+
+                            <button type="button">
+                                #힐링
+                            </button>
+
+                            <button type="button">
+                                #가족여행
+                            </button>
+
+                            <button type="button">
+                                #혼자여행
+                            </button>
+
+                            <button type="button">
+                                #데이트
+                            </button>
+
+                            <button type="button">
+                                #자연
+                            </button>
+
+                            <button type="button">
+                                #도시
+                            </button>
+
+                            <button type="button">
+                                #음식
+                            </button>
+
+                            <button type="button">
+                                #사진
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ====================================
+                     PUBLIC
+                ==================================== -->
+
+                    <div class="write-side-section privacy-section">
+
+                        <div class="side-title">
+
+                            <img src="./img/travel-write/Lock.png" alt="">
+
+                            <h3>
+                                공개 설정
+                            </h3>
+
+                        </div>
+
+
+                        <div class="privacy-options">
+
+                            <label>
+
+                                <input type="radio" name="privacy" value="all" checked>
+
+                                <span>
+                                    전체 공개
+                                </span>
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="radio" name="privacy" value="me">
+
+                                <span>
+                                    나만 보기
+                                </span>
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="radio" name="privacy" value="friend">
+
+                                <span>
+                                    친구만 보기
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ========================================
+             BOTTOM
+        ========================================= -->
+
+            <section class="write-bottom">
+
+                <div class="write-bottom-inner">
+
+
+                    <div class="write-bottom-plane">
+
+                        <img src="./img/travle/비행기.png" alt="">
+
+                    </div>
+
+
+                    <p>
+                        여행은 언제나<br>
+                        좋은 이야기로 남습니다 !
+                    </p>
+
+
+                    <div class="write-bottom-buttons">
+
+                        <button type="button" class="cancel-btn">
+                            취소
+                        </button>
+
+
+                        <a href="travel-write-complete.html" class="submit-btn">
+                            <img src="./img/travel-write/PaperPlaneTilt (1).png" alt="">
+                            <span>작성하기</span>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+        <!-- footer -->
+        <footer id=" footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="./img/LOGO.png" alt="TRiPPi" />
+                        <p>너의 취향으로 떠나는 새로운 여행</p>
+                    </div>
+
+                    <nav class="footer-menu">
+                        <a href="#">여행지 찾기</a>
+                        <a href="#">취향테스트</a>
+                        <a href="#">여행기록</a>
+                        <a href="#">마이페이지</a>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-info">
+                        <span>© 2026 TRiPPi. All rights reserved.</span>
+                    </div>
+
+                    <div class="footer-link">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
